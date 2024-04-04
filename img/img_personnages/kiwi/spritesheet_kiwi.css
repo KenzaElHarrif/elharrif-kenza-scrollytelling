@@ -1,0 +1,725 @@
+.sprite-kiwi {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00000 {
+    width: 510px;
+    height: 510px;
+    background-position: 0 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00001 {
+    width: 510px;
+    height: 510px;
+    background-position: -510px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00002 {
+    width: 510px;
+    height: 510px;
+    background-position: -1020px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00003 {
+    width: 510px;
+    height: 510px;
+    background-position: -1530px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00004 {
+    width: 510px;
+    height: 510px;
+    background-position: -2040px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00005 {
+    width: 510px;
+    height: 510px;
+    background-position: -2550px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00006 {
+    width: 510px;
+    height: 510px;
+    background-position: -3060px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00007 {
+    width: 510px;
+    height: 510px;
+    background-position: -3570px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00008 {
+    width: 510px;
+    height: 510px;
+    background-position: -4080px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00009 {
+    width: 510px;
+    height: 510px;
+    background-position: -4590px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00010 {
+    width: 510px;
+    height: 510px;
+    background-position: -5100px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00011 {
+    width: 510px;
+    height: 510px;
+    background-position: -5610px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00012 {
+    width: 510px;
+    height: 510px;
+    background-position: -6120px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00013 {
+    width: 510px;
+    height: 510px;
+    background-position: -6630px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00014 {
+    width: 510px;
+    height: 510px;
+    background-position: -7140px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00015 {
+    width: 510px;
+    height: 510px;
+    background-position: -7650px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00016 {
+    width: 510px;
+    height: 510px;
+    background-position: -8160px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00017 {
+    width: 510px;
+    height: 510px;
+    background-position: -8670px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00018 {
+    width: 510px;
+    height: 510px;
+    background-position: -9180px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00019 {
+    width: 510px;
+    height: 510px;
+    background-position: -9690px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00020 {
+    width: 510px;
+    height: 510px;
+    background-position: -10200px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00021 {
+    width: 510px;
+    height: 510px;
+    background-position: -10710px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00022 {
+    width: 510px;
+    height: 510px;
+    background-position: -11220px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00023 {
+    width: 510px;
+    height: 510px;
+    background-position: -11730px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00024 {
+    width: 510px;
+    height: 510px;
+    background-position: -12240px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00025 {
+    width: 510px;
+    height: 510px;
+    background-position: -12750px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00026 {
+    width: 510px;
+    height: 510px;
+    background-position: -13260px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00027 {
+    width: 510px;
+    height: 510px;
+    background-position: -13770px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00028 {
+    width: 510px;
+    height: 510px;
+    background-position: -14280px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00029 {
+    width: 510px;
+    height: 510px;
+    background-position: -14790px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00030 {
+    width: 510px;
+    height: 510px;
+    background-position: -15300px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00031 {
+    width: 510px;
+    height: 510px;
+    background-position: -15810px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00032 {
+    width: 510px;
+    height: 510px;
+    background-position: -16320px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00033 {
+    width: 510px;
+    height: 510px;
+    background-position: -16830px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00034 {
+    width: 510px;
+    height: 510px;
+    background-position: -17340px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00035 {
+    width: 510px;
+    height: 510px;
+    background-position: -17850px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00036 {
+    width: 510px;
+    height: 510px;
+    background-position: -18360px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00037 {
+    width: 510px;
+    height: 510px;
+    background-position: -18870px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00038 {
+    width: 510px;
+    height: 510px;
+    background-position: -19380px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00039 {
+    width: 510px;
+    height: 510px;
+    background-position: -19890px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00040 {
+    width: 510px;
+    height: 510px;
+    background-position: -20400px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00041 {
+    width: 510px;
+    height: 510px;
+    background-position: -20910px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00042 {
+    width: 510px;
+    height: 510px;
+    background-position: -21420px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00043 {
+    width: 510px;
+    height: 510px;
+    background-position: -21930px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00044 {
+    width: 510px;
+    height: 510px;
+    background-position: -22440px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00045 {
+    width: 510px;
+    height: 510px;
+    background-position: -22950px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00046 {
+    width: 510px;
+    height: 510px;
+    background-position: -23460px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00047 {
+    width: 510px;
+    height: 510px;
+    background-position: -23970px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00048 {
+    width: 510px;
+    height: 510px;
+    background-position: -24480px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00049 {
+    width: 510px;
+    height: 510px;
+    background-position: -24990px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00050 {
+    width: 510px;
+    height: 510px;
+    background-position: -25500px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00051 {
+    width: 510px;
+    height: 510px;
+    background-position: -26010px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00052 {
+    width: 510px;
+    height: 510px;
+    background-position: -26520px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00053 {
+    width: 510px;
+    height: 510px;
+    background-position: -27030px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00054 {
+    width: 510px;
+    height: 510px;
+    background-position: -27540px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00055 {
+    width: 510px;
+    height: 510px;
+    background-position: -28050px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00056 {
+    width: 510px;
+    height: 510px;
+    background-position: -28560px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00057 {
+    width: 510px;
+    height: 510px;
+    background-position: -29070px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00058 {
+    width: 510px;
+    height: 510px;
+    background-position: -29580px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00059 {
+    width: 510px;
+    height: 510px;
+    background-position: -30090px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00060 {
+    width: 510px;
+    height: 510px;
+    background-position: -30600px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00061 {
+    width: 510px;
+    height: 510px;
+    background-position: -31110px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00062 {
+    width: 510px;
+    height: 510px;
+    background-position: -31620px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00063 {
+    width: 510px;
+    height: 510px;
+    background-position: -32130px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00064 {
+    width: 510px;
+    height: 510px;
+    background-position: -32640px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00065 {
+    width: 510px;
+    height: 510px;
+    background-position: -33150px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00066 {
+    width: 510px;
+    height: 510px;
+    background-position: -33660px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00067 {
+    width: 510px;
+    height: 510px;
+    background-position: -34170px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00068 {
+    width: 510px;
+    height: 510px;
+    background-position: -34680px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00069 {
+    width: 510px;
+    height: 510px;
+    background-position: -35190px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00070 {
+    width: 510px;
+    height: 510px;
+    background-position: -35700px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00071 {
+    width: 510px;
+    height: 510px;
+    background-position: -36210px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00072 {
+    width: 510px;
+    height: 510px;
+    background-position: -36720px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00073 {
+    width: 510px;
+    height: 510px;
+    background-position: -37230px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00074 {
+    width: 510px;
+    height: 510px;
+    background-position: -37740px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00075 {
+    width: 510px;
+    height: 510px;
+    background-position: -38250px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00076 {
+    width: 510px;
+    height: 510px;
+    background-position: -38760px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00077 {
+    width: 510px;
+    height: 510px;
+    background-position: -39270px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00078 {
+    width: 510px;
+    height: 510px;
+    background-position: -39780px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00079 {
+    width: 510px;
+    height: 510px;
+    background-position: -40290px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00080 {
+    width: 510px;
+    height: 510px;
+    background-position: -40800px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00081 {
+    width: 510px;
+    height: 510px;
+    background-position: -41310px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00082 {
+    width: 510px;
+    height: 510px;
+    background-position: -41820px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00083 {
+    width: 510px;
+    height: 510px;
+    background-position: -42330px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00084 {
+    width: 510px;
+    height: 510px;
+    background-position: -42840px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00085 {
+    width: 510px;
+    height: 510px;
+    background-position: -43350px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00086 {
+    width: 510px;
+    height: 510px;
+    background-position: -43860px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00087 {
+    width: 510px;
+    height: 510px;
+    background-position: -44370px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00088 {
+    width: 510px;
+    height: 510px;
+    background-position: -44880px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00089 {
+    width: 510px;
+    height: 510px;
+    background-position: -45390px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00090 {
+    width: 510px;
+    height: 510px;
+    background-position: -45900px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00091 {
+    width: 510px;
+    height: 510px;
+    background-position: -46410px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00092 {
+    width: 510px;
+    height: 510px;
+    background-position: -46920px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00093 {
+    width: 510px;
+    height: 510px;
+    background-position: -47430px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00094 {
+    width: 510px;
+    height: 510px;
+    background-position: -47940px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00095 {
+    width: 510px;
+    height: 510px;
+    background-position: -48450px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00096 {
+    width: 510px;
+    height: 510px;
+    background-position: -48960px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00097 {
+    width: 510px;
+    height: 510px;
+    background-position: -49470px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00098 {
+    width: 510px;
+    height: 510px;
+    background-position: -49980px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00099 {
+    width: 510px;
+    height: 510px;
+    background-position: -50490px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00100 {
+    width: 510px;
+    height: 510px;
+    background-position: -51000px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00101 {
+    width: 510px;
+    height: 510px;
+    background-position: -51510px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00102 {
+    width: 510px;
+    height: 510px;
+    background-position: -52020px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00103 {
+    width: 510px;
+    height: 510px;
+    background-position: -52530px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00104 {
+    width: 510px;
+    height: 510px;
+    background-position: -53040px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00105 {
+    width: 510px;
+    height: 510px;
+    background-position: -53550px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00106 {
+    width: 510px;
+    height: 510px;
+    background-position: -54060px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00107 {
+    width: 510px;
+    height: 510px;
+    background-position: -54570px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00108 {
+    width: 510px;
+    height: 510px;
+    background-position: -55080px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00109 {
+    width: 510px;
+    height: 510px;
+    background-position: -55590px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00110 {
+    width: 510px;
+    height: 510px;
+    background-position: -56100px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00111 {
+    width: 510px;
+    height: 510px;
+    background-position: -56610px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00112 {
+    width: 510px;
+    height: 510px;
+    background-position: -57120px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00113 {
+    width: 510px;
+    height: 510px;
+    background-position: -57630px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00114 {
+    width: 510px;
+    height: 510px;
+    background-position: -58140px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00115 {
+    width: 510px;
+    height: 510px;
+    background-position: -58650px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00116 {
+    width: 510px;
+    height: 510px;
+    background-position: -59160px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00117 {
+    width: 510px;
+    height: 510px;
+    background-position: -59670px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00118 {
+    width: 510px;
+    height: 510px;
+    background-position: -60180px 0;
+}
+
+.sprite-kiwi-kiwi_spritesheet_00119 {
+    width: 510px;
+    height: 510px;
+    background-position: -60690px 0;
+}

@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Gorditas:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gorditas:wght@400;700&family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+
+:root{
+    --gris:#8C8C8C;
+    --rose: #BF6F7E;
+    --orange: #D8A48F;
+    --beige: #fffdf3;
+    --vertpale: #EFEBCE;
+    --vert: #D6CE93;
+    --vertfonce: #A3A380;
+}
+
+*{
+    font-family: Mukta;
+    background-color: var(--beige);
+}
+
+body{
+    overflow-x: hidden;
+    width: 100vw;
+}
+
+/*----------SECTION HEADER-------------*/
+header{
+    width: 100%;
+    height:100%;
+}
+
+h1{
+    width: 30vw;
+    text-align: center;
+    position: relative;
+    left: 50vw;
+    top: 50vh;
+    transform: translate(-15vw, -50vh) ;
+    font-family: Gorditas;
+    font-size: 15vw;
+    color:var(--orange);
+    z-index: 1;
+}
+
+.appel{
+    position: relative;
+    left: 47vw;
+    bottom: -5vh ;
+    max-width: 5vw;
+    max-height: 5vh;
+    opacity: 0.5;
+}
+
+.presentation{
+    width: 98vw;
+    color: var(--gris);
+    position: relative;
+    left: 0.1vw;
+    text-align: center;
+    font-size: 0.8vw;
+}
+
+/*----------SECTION MAIN------------*/
+
+#chapitre1{
+    width: 100vw;
+    height:100vh;
+}
+#chapitre2{
+    width: 100vw;
+    height:100vh;
+}
+#chapitre3{
+    width: 100vw;
+    height:100vh;
+}
+#chapitre4{
+    width: 100vw;
+    height:100vh;
+}
+#chapitre5{
+    width: 100vw;
+    height:100vh;
+}
+#chapitre6{
+    width: 100vw;
+    height:100vh;
+}
+
+/*----------SpriteSheet Teste------------*/
+
+.is-scrolling{
+    width: 100vw;
+    height: 2000vh;
+    animation-play-state: running;
+}
+
+.sprite1{
+    background-repeat: no-repeat;
+    background-image: url(../img/img_personnages/kiwi/spritesheet_kiwi.png);
+    width: 510px;
+    height: 510px;
+    animation-name: kiwi;
+    animation-duration: 4s;
+    animation-timing-function: steps(120);
+    animation-iteration-count: infinite;
+    transform: scale(.5) translate(60vw, 0vh);
+    animation-play-state:paused;
+}
+
+.sprite2{
+    background-repeat: no-repeat;
+    background-image: url(../img/img_elements_visuels/spritesheet_enseigne.png);
+    animation-duration: 1s;
+    width: 1080px;
+    height: 1080px;
+    animation-name: enseigne;
+    animation-timing-function: steps(48);
+    animation-iteration-count: infinite;
+    transform: scale(.3) translate(35vw, 0);
+    animation-play-state:paused;
+}
+
+@keyframes kiwi {
+    from { background-position: 0 0; }
+    to { background-position: -61200px 0; }
+}
+@keyframes enseigne {
+    from { background-position: 0 0; }
+    to { background-position: -51936px 0; }
+}
+
+/*----------MEDIA QUERIES------------*/
+
+@media screen and (max-width: 1024px) {
+    h1{
+        width: 30vw;
+        left: 50vw;
+        top: 50vh;
+        font-size: 15vw;
+    }
+    
+    .appel{
+        left: 47vw;
+        bottom: -37vh ;
+        max-width: 5vw;
+        max-height: 5vh;
+    }
+    
+    .presentation{
+        width: 96vw;
+        bottom: -36vh;
+        left: 1.5vw;
+        font-size: 1.1vw;
+    }
+}
+
+/*media queries pour tablette*/
+@media screen and (max-width: 800px) {
+    h1{
+        width: 40vw;
+        left: 45vw;
+        top: 50vh;
+        font-size: 20vw;
+    }
+    
+    .appel{
+        left: 47vw;
+        bottom: -38vh;
+        max-width: 5vw;
+        max-height: 5vh;
+    }
+    
+    .presentation{
+        width: 96vw;
+        bottom: -36vh;
+        left: 1vw;
+        font-size: 2vw;
+    }
+  }
+  
+  /* media queries pour phone */
+  @media screen and (max-width: 425px) {
+    h1{
+        width: 50vw;
+        left: 40vw;
+        top: 70vh;
+        font-size: 25vw;
+    }
+    
+    .appel{
+        left: 45vw;
+        bottom: -50vh;
+        max-width: 10vw;
+        max-height: 5vh;
+    }
+    
+    .presentation{
+        width: 96vw;
+        bottom: -48vh;
+        left: 0.5vw;
+        font-size: 3vw;
+    }
+    }
