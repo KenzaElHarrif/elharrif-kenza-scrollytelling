@@ -65,91 +65,32 @@ h1{
 /*----------SECTION MAIN------------*/
 
 #chapitre1{
-    display: none;
     width: 100vw;
     height:100vh;
 }
 #chapitre2{
-    display: none;
     width: 100vw;
     height:100vh;
 }
 #chapitre3{
-    display: none;
     width: 100vw;
     height:100vh;
 }
 #chapitre4{
-    display: none;
     width: 100vw;
     height:100vh;
 }
 #chapitre5{
-    display: none;
     width: 100vw;
     height:100vh;
 }
 #chapitre6{
-    display: none;
     width: 100vw;
     height:100vh;
 }
 
-.scene1{
-    display: none;
-    position: absolute;
-    top: 100vh;
-    height: 100vh;
-}
-
-.scene1-fond{
-    display: none;
-    position: relative;
-    height: 100vh;
-    top: 110vh;
-}
-
-.scene2{
-    display: none;
-    width: 100vw;
-    position: relative;
-    top: 110vh;
-}
-
-.scene3{
-    display: none;
-    width: 100vw;
-    position: relative;
-    top: 259vh;
-}
-
-.scene4{
-    display: none;
-    width: 100vw;
-    position: relative;
-    top: 403vh;
-}
-
-.noir{
-    display: none;
-    position: relative;
-    top: 400vh;
-}
-.fond{
-    display: none;
-    position: relative;
-    top: 359vh;
-}
-
-.scene5{
-    display: none;
-    position: relative;
-    top:610vh;
-}
-
-.scene6{
-    display: none;
-    position: relative;
+img{
+    margin: 0px;
 }
 
 /*----------SpriteSheet Teste------------*/
