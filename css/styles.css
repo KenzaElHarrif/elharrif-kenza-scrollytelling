@@ -13,12 +13,15 @@
 
 *{
     font-family: Mukta;
-    background-color: var(--beige);
 }
 
 body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     overflow-x: hidden;
     width: 100vw;
+    background-color: var(--beige);
 }
 
 /*----------SECTION HEADER-------------*/
@@ -47,42 +50,106 @@ h1{
     max-width: 5vw;
     max-height: 5vh;
     opacity: 0.5;
+    z-index: 1;
 }
 
 .presentation{
     width: 98vw;
     color: var(--gris);
-    position: relative;
-    left: 0.1vw;
     text-align: center;
     font-size: 0.8vw;
 }
 
+
+
 /*----------SECTION MAIN------------*/
 
 #chapitre1{
+    display: none;
     width: 100vw;
     height:100vh;
 }
 #chapitre2{
+    display: none;
     width: 100vw;
     height:100vh;
 }
 #chapitre3{
+    display: none;
     width: 100vw;
     height:100vh;
 }
 #chapitre4{
+    display: none;
     width: 100vw;
     height:100vh;
 }
 #chapitre5{
+    display: none;
     width: 100vw;
     height:100vh;
 }
 #chapitre6{
+    display: none;
     width: 100vw;
     height:100vh;
+}
+
+.scene1{
+    display: none;
+    position: absolute;
+    top: 100vh;
+    height: 100vh;
+}
+
+.scene1-fond{
+    display: none;
+    position: relative;
+    height: 100vh;
+    top: 110vh;
+}
+
+.scene2{
+    display: none;
+    width: 100vw;
+    position: relative;
+    top: 110vh;
+}
+
+.scene3{
+    display: none;
+    width: 100vw;
+    position: relative;
+    top: 259vh;
+}
+
+.scene4{
+    display: none;
+    width: 100vw;
+    position: relative;
+    top: 403vh;
+}
+
+.noir{
+    display: none;
+    position: relative;
+    top: 400vh;
+}
+.fond{
+    display: none;
+    position: relative;
+    top: 359vh;
+}
+
+.scene5{
+    display: none;
+    position: relative;
+    top:610vh;
+}
+
+.scene6{
+    display: none;
+    position: relative;
 }
 
 /*----------SpriteSheet Teste------------*/
@@ -146,11 +213,49 @@ h1{
     }
     
     .presentation{
+        position: relative;
         width: 96vw;
         bottom: -36vh;
         left: 1.5vw;
         font-size: 1.1vw;
     }
+
+    /*-------MAIN-------*/
+
+    /*.scene1{
+        top: 100vh;
+    }
+    
+    .scene1-fond{
+        top: 121vh;
+    }
+    
+    .scene2{
+        top: 121vh;
+    }
+    
+    .scene3{
+        top: 238vh;
+    }
+    
+    .scene4{
+        top: 350vh;
+    }
+    
+    .noir{
+        top:347vh;
+    }
+    .fond{
+        top: 34vh;
+    }
+    
+    .scene5{
+        top: 658vh;
+    }
+    
+    .scene6{
+        top: 676vh;
+    }*/
 }
 
 /*media queries pour tablette*/
@@ -158,20 +263,20 @@ h1{
     h1{
         width: 40vw;
         left: 45vw;
-        top: 50vh;
         font-size: 20vw;
     }
     
     .appel{
         left: 47vw;
-        bottom: -38vh;
+        bottom: -35vh;
         max-width: 5vw;
         max-height: 5vh;
     }
     
     .presentation{
+        position: relative;
         width: 96vw;
-        bottom: -36vh;
+        bottom: -35vh;
         left: 1vw;
         font-size: 2vw;
     }
@@ -182,7 +287,6 @@ h1{
     h1{
         width: 50vw;
         left: 40vw;
-        top: 70vh;
         font-size: 25vw;
     }
     
@@ -194,9 +298,9 @@ h1{
     }
     
     .presentation{
+        position: relative;
         width: 96vw;
-        bottom: -48vh;
-        left: 0.5vw;
+        bottom: -50vh;
         font-size: 3vw;
     }
     }
