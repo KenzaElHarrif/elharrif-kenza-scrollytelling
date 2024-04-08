@@ -54,7 +54,7 @@ h1{
 .presentation{
     position: absolute;
     width: 98vw;
-    bottom: 17vh;
+    bottom: 18vh;
     color: var(--gris);
     text-align: center;
     font-size: 11px;
@@ -65,68 +65,194 @@ h1{
 /*----------SECTION MAIN------------*/
 
 #chapitre1{
+    position: relative;
     width: 100vw;
     height:100vh;
+    background-color: var(--vertpale);
 }
 #chapitre2{
     position: relative;
-    top: 100vh;
+    top: 200vh;
     width: 100vw;
-    height:100vh;
+    height:200vh;
     background-size: cover;
-    background-image: url(../img/img_arriere_plan/scene2_elements/scene2_fond.jpg);
 }
 #chapitre3{
     position: relative;
-    top: 100vh;
+    top: 400vh;
     width: 100vw;
     height:100vh;
     background-size: cover;
-    background-image: url(../img/img_arriere_plan/scene3_elements/scene3_fond.jpg);
 }
 #chapitre4{
     position: relative;
-    top: 100vh;
+    top: 700vh;
     width: 100vw;
     height:100vh;
     background-size: cover;
-    background-image: url(../img/img_arriere_plan/scene4_elements/scene4_fond_01.jpg);
 }
 
 #chapitre5{
     position: relative;
-    top: 100vh;
+    top: 1000vh;
     width: 100vw;
     height:100vh;
     background-size: cover;
-    background-image: url(../img/img_arriere_plan/scene5_elements/scene5_fond.jpg);
 }
 #chapitre6{
     position: relative;
-    top: 100vh;
+    top: 1200vh;
     width: 100vw;
     height:100vh;
-    background-image: url(../img/img_arriere_plan/scene6_elements/scene6_fond.jpg);
 }
 
 img{
     margin: 0px;
 }
 
-.scene1{
+/*.scene1{
     width: 100vw;
     position: absolute;
-}
+}*/
 
-.scene1-fond{
+.scene1-parallax1{
     position: relative;
     top: 100vh;
     height: 100vh;
     background-size:cover;
+    z-index: 1;
+    background-image: url(../img/img_arriere_plan/scene_1_elements/scene1_arbre_derriere.png);
+}
+
+.scene1-parallax2{
+    position: relative;
+    height: 100vh;
+    background-size:cover;
+    z-index: 2;
+    background-image: url(../img/img_arriere_plan/scene_1_elements/scene1_gazon.png);
+}
+
+.scene1-parallax3{
+    position: relative;
+    top: -100vh;
+    height: 100vh;
+    background-size:cover;
+    z-index: 3;
+    background-image: url(../img/img_arriere_plan/scene_1_elements/scene1_arbre_devant.png);
+}
+
+.scene1-parallax4{
+    position: relative;
+    top: -200vh;
+    height: 100vh;
+    background-size:cover;
+    z-index: 4;
+    background-image: url(../img/img_arriere_plan/scene_1_elements/scene1_buissons.png);
+}
+
+.scene1-fond{
+    position: relative;
+    top: -200vh;
+    height: 100vh;
+    background-size:cover;
+    background-position-x: 90%;
     background-image: url(../img/img_arriere_plan/scene_1_elements/scene1_fond_avec_trou.png);
 }
 
+.scene2-titre{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--vert);
+}
+
+.scene2{
+    position: relative;
+    width: 100vw;
+    height: 300vh;
+    background-size:cover;
+    background-image: url(../img/img_arriere_plan/scene2_elements/scene2_fond.jpg);
+}
+
+.scene3-titre{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--orange);
+}
+.scene3{
+    position: relative;
+    width: 100vw;
+    height: 300vh;
+    background-size:cover;
+    background-position: 0, 50%;
+    background-image: url(../img/img_arriere_plan/scene3_elements/scene3_fond.jpg);
+}
+
+.scene4-titre{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--rose);
+}
+
+.scene4-fond{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-image: url(../img/img_arriere_plan/scene4_elements/scene4_fond_01.png);
+}
+
+.scene4-noir{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../img/img_arriere_plan/scene4_elements/scene4_fond_02.png);
+}
+
+.scene4-kiwi{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--beige);
+}
+
+.scene5-titre{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--beige);
+}
+
+.scene5{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-image: url(../img/img_arriere_plan/scene5_elements/scene5_fond.jpg);
+}
+
+.scene6-titre{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--vertpale);
+}
+
+.scene6{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-image: url(../img/img_arriere_plan/scene6_elements/scene6_fond.jpg);
+}
+
 /*----------SpriteSheet Teste------------*/
+
+.size{
+    height: 600vh;
+}
 
 body.is-scrolling .sprite1{
     animation-play-state: running;
