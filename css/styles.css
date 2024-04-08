@@ -27,7 +27,7 @@ body{
 /*----------SECTION HEADER-------------*/
 header{
     width: 100%;
-    height:100%;
+    height:100vh;
 }
 
 h1{
@@ -69,35 +69,70 @@ h1{
     height:100vh;
 }
 #chapitre2{
+    position: relative;
+    top: 100vh;
     width: 100vw;
     height:100vh;
+    background-size: cover;
+    background-image: url(../img/img_arriere_plan/scene2_elements/scene2_fond.jpg);
 }
 #chapitre3{
+    position: relative;
+    top: 100vh;
     width: 100vw;
     height:100vh;
+    background-size: cover;
+    background-image: url(../img/img_arriere_plan/scene3_elements/scene3_fond.jpg);
 }
 #chapitre4{
+    position: relative;
+    top: 100vh;
     width: 100vw;
     height:100vh;
+    background-size: cover;
+    background-image: url(../img/img_arriere_plan/scene4_elements/scene4_fond_01.jpg);
 }
+
 #chapitre5{
+    position: relative;
+    top: 100vh;
     width: 100vw;
     height:100vh;
+    background-size: cover;
+    background-image: url(../img/img_arriere_plan/scene5_elements/scene5_fond.jpg);
 }
 #chapitre6{
+    position: relative;
+    top: 100vh;
     width: 100vw;
     height:100vh;
+    background-image: url(../img/img_arriere_plan/scene6_elements/scene6_fond.jpg);
 }
 
 img{
     margin: 0px;
 }
 
+.scene1{
+    height: 100vh;
+    position: absolute;
+}
+
+.scene1-fond{
+    position: relative;
+    top: 100vh;
+    height: 100vh;
+    background-size:cover;
+    background-image: url(../img/img_arriere_plan/scene_1_elements/scene1_fond_avec_trou.png);
+}
+
 /*----------SpriteSheet Teste------------*/
 
-.is-scrolling{
-    width: 100vw;
-    height: 2000vh;
+body.is-scrolling .sprite1{
+    animation-play-state: running;
+}
+
+body.is-scrolling .sprite2{
     animation-play-state: running;
 }
 
@@ -244,4 +279,6 @@ img{
         bottom: -50vh;
         font-size: 3vw;
     }
+
+    
     }
