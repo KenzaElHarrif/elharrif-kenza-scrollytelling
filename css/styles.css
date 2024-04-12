@@ -263,38 +263,36 @@ body.is-scrolling .sprite2{
 }
 
 .sprite1{
-    background-repeat: no-repeat;
     background-image: url(../img/img_personnages/kiwi/spritesheet_kiwi.png);
-    width: 510px;
-    height: 510px;
+    width: 30vw;
+    aspect-ratio: 1/1;
+    background-size:12000% 100%;
     animation-name: kiwi;
-    animation-duration: 4s;
+    animation-duration: 2s;
     animation-timing-function: steps(120);
     animation-iteration-count: infinite;
-    transform: scale(.5) translate(60vw, 0vh);
     animation-play-state:paused;
 }
 
 .sprite2{
-    background-repeat: no-repeat;
     background-image: url(../img/img_elements_visuels/spritesheet_enseigne.png);
     animation-duration: 1s;
-    width: 1080px;
-    height: 1080px;
+    width: 30vw;
+    aspect-ratio: 1/1;
+    background-size: 4800% 100%;
     animation-name: enseigne;
     animation-timing-function: steps(48);
     animation-iteration-count: infinite;
-    transform: scale(.3) translate(35vw, 0);
     animation-play-state:paused;
 }
 
 @keyframes kiwi {
     from { background-position: 0 0; }
-    to { background-position: -61200px 0; }
+    to { background-position: -12000% 0; }
 }
 @keyframes enseigne {
     from { background-position: 0 0; }
-    to { background-position: -51936px 0; }
+    to { background-position: -4800% 0; }
 }
 
 /*----------MEDIA QUERIES------------*/
