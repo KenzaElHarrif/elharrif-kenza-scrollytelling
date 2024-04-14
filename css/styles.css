@@ -2,12 +2,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Gorditas:wght@400;700&family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
 
 :root{
+    --noir: black;
     --gris:#8C8C8C;
-    --rose: #BF6F7E;
+    --rose: #E9C5B5;
+    --rosebonbon: #FDDDE2;
+    --roseblanc: #FFF9FB;
+    --orangepale: #FFE5DA;
     --orange: #D8A48F;
     --beige: #fffdf3;
+    --beigefonce:#F4F1DE;
+    --beigepale:#FBFAF5;
     --vertpale: #EFEBCE;
+    --vertciel: #F8F4DB;
     --vert: #D6CE93;
+    --vertgazon: #DDD7AB;
     --vertfonce: #A3A380;
 }
 
@@ -68,25 +76,25 @@ h1{
     position: relative;
     width: 100vw;
     height:100vh;
-    background-color: var(--vertpale);
+    background-color: var(--beige);
 }
 #chapitre2{
     position: relative;
-    top: 200vh;
+    top: 300vh;
     width: 100vw;
     height:200vh;
     background-size: cover;
 }
 #chapitre3{
     position: relative;
-    top: 400vh;
+    top: 500vh;
     width: 100vw;
     height:100vh;
     background-size: cover;
 }
 #chapitre4{
     position: relative;
-    top: 700vh;
+    top: 800vh;
     width: 100vw;
     height:100vh;
     background-size: cover;
@@ -94,30 +102,21 @@ h1{
 
 #chapitre5{
     position: relative;
-    top: 1000vh;
+    top: 1600vh;
     width: 100vw;
     height:100vh;
     background-size: cover;
 }
 #chapitre6{
     position: relative;
-    top: 1200vh;
+    top: 1700vh;
     width: 100vw;
     height:100vh;
 }
 
-img{
-    margin: 0px;
-}
-
-/*.scene1{
-    width: 100vw;
-    position: absolute;
-}*/
-
 .scene1-parallax1{
     position: relative;
-    top: 100vh;
+    top: 100%;
     height: 100vh;
     background-size:cover;
     z-index: 1;
@@ -137,7 +136,7 @@ img{
     top: -100vh;
     height: 100vh;
     background-size:cover;
-    z-index: 3;
+    z-index: 4;
     background-image: url(../img/img_arriere_plan/scene_1_elements/scene1_arbre_devant.png);
 }
 
@@ -146,8 +145,16 @@ img{
     top: -200vh;
     height: 100vh;
     background-size:cover;
-    z-index: 4;
+    z-index: 5;
     background-image: url(../img/img_arriere_plan/scene_1_elements/scene1_buissons.png);
+}
+
+.scene1-gradient{
+    position: relative;
+    top: -200vh;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(180deg, var(--vert) 0%, var(--vertciel) 100%);
 }
 
 .scene1-fond{
@@ -159,11 +166,13 @@ img{
     background-image: url(../img/img_arriere_plan/scene_1_elements/scene1_fond_avec_trou.png);
 }
 
+
+
 .scene2-titre{
     position: relative;
     width: 100vw;
     height: 100vh;
-    background-color: var(--gris);
+    background: linear-gradient(180deg, var(--vertgazon) 0%, var(--vertpale) 100%);
 }
 
 .scene2{
@@ -178,7 +187,7 @@ img{
     position: relative;
     width: 100vw;
     height: 100vh;
-    background-color: var(--orange);
+    background: linear-gradient(180deg, var(--rose) 0%, var(--rosebonbon) 100%);
 }
 .scene3{
     position: relative;
@@ -193,7 +202,7 @@ img{
     position: relative;
     width: 100vw;
     height: 100vh;
-    background-color: var(--rose);
+    background: linear-gradient(180deg, var(--rosebonbon) 0%, var(--orangepale) 100%);
 }
 
 .scene4-fond{
@@ -204,11 +213,26 @@ img{
     background-image: url(../img/img_arriere_plan/scene4_elements/scene4_fond_01.png);
 }
 
-.scene4-noir{
+.scene4-transition{
     position: relative;
     width: 100vw;
     height: 100vh;
+    background: linear-gradient(180deg, var(--roseblanc) 0%, var(--noir) 100%);
+}
+
+.scene4-noir{
+    position: relative;
+    width: 100vw;
+    height: 400vh;
+    background-repeat: repeat-y;
     background-image: url(../img/img_arriere_plan/scene4_elements/scene4_fond_02.png);
+}
+
+.scene4-transition2{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(180deg, var(--noir) 0%, var(--beige) 100%);
 }
 
 .scene4-kiwi{
@@ -222,7 +246,7 @@ img{
     position: relative;
     width: 100vw;
     height: 100vh;
-    background-color: var(--beige);
+    background: linear-gradient(180deg, var(--beige) 0%, var(--beigefonce) 100%);
 }
 
 .scene5{
@@ -237,7 +261,7 @@ img{
     position: relative;
     width: 100vw;
     height: 100vh;
-    background-color: var(--vertpale);
+    background: linear-gradient(180deg, var(--beigepale) 0%, var(--beigefonce) 100%);
 }
 
 .scene6{
@@ -248,7 +272,7 @@ img{
     background-image: url(../img/img_arriere_plan/scene6_elements/scene6_fond.jpg);
 }
 
-/*----------SpriteSheet Teste------------*/
+/*----------ANIMATIONS SPRITESHEET------------*/
 
 .size{
     height: 600vh;
@@ -295,114 +319,166 @@ body.is-scrolling .sprite2{
     to { background-position: -4800% 0; }
 }
 
-/*----------MEDIA QUERIES------------*/
+/*---------IMAGES POUR ANIMATIONS--------*/
 
-/*@media screen and (max-width: 1024px) {
-    h1{
-        width: 30vw;
-        left: 50vw;
-        top: 50vh;
-        font-size: 15vw;
-    }
-    
-    .appel{
-        left: 47vw;
-        bottom: -37vh ;
-        max-width: 5vw;
-        max-height: 5vh;
-    }
-    
-    .presentation{
-        position: relative;
-        width: 96vw;
-        bottom: -36vh;
-        left: 1.5vw;
-        font-size: 1.1vw;
-    }*/
 
-    /*-------MAIN-------*/
+/*---------SCENE-1--------*/
 
-    /*.scene1{
-        top: 100vh;
-    }
-    
-    .scene1-fond{
-        top: 121vh;
-    }
-    
-    .scene2{
-        top: 121vh;
-    }
-    
-    .scene3{
-        top: 238vh;
-    }
-    
-    .scene4{
-        top: 350vh;
-    }
-    
-    .noir{
-        top:347vh;
-    }
-    .fond{
-        top: 34vh;
-    }
-    
-    .scene5{
-        top: 658vh;
-    }
-    
-    .scene6{
-        top: 676vh;
-    }
+.scene1-lilo-triste-1{
+    width: 39vw;
+    position: absolute;
+    bottom: -100vh;
+    left: 25vw;
 }
 
-/*media queries pour tablette*/
-/*@media screen and (max-width: 800px) {
-    h1{
-        width: 40vw;
-        left: 45vw;
-        font-size: 20vw;
-    }
-    
-    .appel{
-        left: 47vw;
-        bottom: -35vh;
-        max-width: 5vw;
-        max-height: 5vh;
-    }
-    
-    .presentation{
-        position: relative;
-        width: 96vw;
-        bottom: -35vh;
-        left: 1vw;
-        font-size: 2vw;
-    }
-  }*/
-  
-  /* media queries pour phone */
-  /*@media screen and (max-width: 425px) {
-    h1{
-        width: 50vw;
-        left: 40vw;
-        font-size: 25vw;
-    }
-    
-    .appel{
-        left: 45vw;
-        bottom: -50vh;
-        max-width: 10vw;
-        max-height: 5vh;
-    }
-    
-    .presentation{
-        position: relative;
-        width: 96vw;
-        bottom: -50vh;
-        font-size: 3vw;
-    }
+.scene1-lilo-triste-2{
+    z-index: 1;
+    position: absolute;
+    width: 39vw;
+    bottom: -300vh;
+}
 
-    
-    }*/
+/*---------SCENE-2--------*/
+
+.scene2-lilo-tombe{
+    position: absolute;
+    width: 25vw;
+    left: 75vw;
+    z-index: 3;
+}
+
+.scene2-mimi{
+    position: absolute;
+    width: 80%;
+    right: 30%;
+    z-index: 2;
+}
+
+.scene2-lilo-assise{
+    position: absolute;
+    width: 80%;
+    right: -15%;
+    top: -10%;
+    z-index: 1;
+}
+
+.scene2-nuage{
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+
+.sur-nuage-1{
+    position: absolute;
+    width: 50vw;
+    height: 50vw;
+    left: 25vw;
+    top: 195vh;
+    z-index: 1;
+}
+
+.scene2-poisson1{
+    position: absolute;
+    width: 25vh;
+    top: 370vh;
+    z-index: 1;
+}
+
+.scene2-poisson2{
+    position: absolute;
+    left: 25vh;
+    width: 20vw;
+    top: 320vh;
+    z-index: 1;
+}
+
+.scene2-poisson3{
+    position: absolute;
+    right: 40vh;
+    top: 315vh;
+    width: 25vw;
+    z-index: 1;
+}
+
+.scene2-poisson4{
+    position: absolute;
+    right: 30vh;
+    top: 430vh;
+    width: 35vw;
+    z-index: 1;
+}
+
+
+/*---------SCENE-3--------*/
+
+.scene3-nuage{
+    display: none;
+    position: absolute;
+    bottom: 1%;
+    width: 100%;
+    z-index: 1;
+}
+
+.scene3-lilo-mimi{
+    display: none;
+    position: absolute;
+    bottom: 30%;
+    width: 100%;
+    z-index: 1;
+}
+
+.sur-nuage-2{
+    display: none;
+    background-color: red;
+    width: 40vw;
+    height:40vw;
+    position: fixed;
+    bottom: 5vh;
+    left: 30vw;
+    z-index: 1;
+}
+
+.scene3-cristal-1{
+    width: 10vw;
+    position: absolute;
+    z-index: 1;
+}
+
+.scene3-cristal-2{
+    width: 10vw;
+    position: absolute;
+    z-index: 1;
+}
+
+.scene3-cristal-3{
+    width: 10vw;
+    position: absolute;
+    z-index: 1;
+}
+
+.scene3-cristal-4{
+    width: 10vw;
+    position: absolute;
+    z-index: 1;
+}
+
+
+/*---------SCENE-4--------*/
+
+
+
+
+img { border: 1px solid rgba(218, 0, 0, 0.5); }
+/*-------MEDIA QUERIES-------*/
+
+
+
+
+/*---------FOOTER--------*/
+footer{
+    text-align: center;
+    color: var(--gris);
+    position: relative;
+    z-index: 1;
+    bottom: -1785vh;
+}
