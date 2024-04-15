@@ -234,7 +234,6 @@ h1{
     position: relative;
     width: 100vw;
     height: 400vh;
-    background-repeat: repeat-y;
     background-image: url(../img/img_arriere_plan/scene4_elements/scene4_fond_02.png);
 }
 
