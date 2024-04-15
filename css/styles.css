@@ -116,7 +116,7 @@ h1{
 
 .scene1-parallax1{
     position: relative;
-    top: 100%;
+    top: 100vh;
     height: 100vh;
     background-size:cover;
     z-index: 1;
@@ -272,53 +272,6 @@ h1{
     background-image: url(../img/img_arriere_plan/scene6_elements/scene6_fond.jpg);
 }
 
-/*----------ANIMATIONS SPRITESHEET------------*/
-
-.size{
-    height: 600vh;
-}
-
-body.is-scrolling .sprite1{
-    animation-play-state: running;
-}
-
-body.is-scrolling .sprite2{
-    animation-play-state: running;
-}
-
-.sprite1{
-    background-image: url(../img/img_personnages/kiwi/spritesheet_kiwi.png);
-    width: 30vw;
-    aspect-ratio: 1/1;
-    background-size:12000% 100%;
-    animation-name: kiwi;
-    animation-duration: 2s;
-    animation-timing-function: steps(120);
-    animation-iteration-count: infinite;
-    animation-play-state:paused;
-}
-
-.sprite2{
-    background-image: url(../img/img_elements_visuels/spritesheet_enseigne.png);
-    animation-duration: 1s;
-    width: 30vw;
-    aspect-ratio: 1/1;
-    background-size: 4800% 100%;
-    animation-name: enseigne;
-    animation-timing-function: steps(48);
-    animation-iteration-count: infinite;
-    animation-play-state:paused;
-}
-
-@keyframes kiwi {
-    from { background-position: 0 0; }
-    to { background-position: -12000% 0; }
-}
-@keyframes enseigne {
-    from { background-position: 0 0; }
-    to { background-position: -4800% 0; }
-}
-
 /*---------IMAGES POUR ANIMATIONS--------*/
 
 
@@ -370,9 +323,9 @@ body.is-scrolling .sprite2{
 
 .sur-nuage-1{
     position: absolute;
-    width: 50vw;
-    height: 50vw;
-    left: 25vw;
+    width: 35vw;
+    height: 35vw;
+    left: 30vw;
     top: 195vh;
     z-index: 1;
 }
@@ -465,10 +418,102 @@ body.is-scrolling .sprite2{
 
 /*---------SCENE-4--------*/
 
+.scene4-nuage{
+    position: absolute;
+    bottom: 1%;
+    width: 100%;
+    z-index: 1;
+}
 
+.scene4-lilo-mimi{
+    position: absolute;
+    bottom: 30%;
+    width: 100%;
+    z-index: 1;
+}
+
+.sur-nuage-3{
+    width: 40vw;
+    height:40vw;
+    position: absolute;
+    bottom: 5vh;
+    z-index: 1;
+}
+
+.scene4-yeux-lilo{
+    position: absolute;
+    width: 10vw;
+    top: 320vh;
+    z-index: 1;
+}
+
+.scene4-yeux-mimi{
+    position: absolute;
+    left: 10vw;
+    top: 320vh;
+    width: 10vw;
+    z-index: 1;
+}
+
+.scene4-yeux-kiwi{
+    position: absolute;
+    width: 10vw;
+}
 
 
 img { border: 1px solid rgba(218, 0, 0, 0.5); }
+
+/*----------ANIMATIONS SPRITESHEET------------*/
+
+.size{
+    height: 600vh;
+}
+
+body.is-scrolling .sprite1{
+    animation-play-state: running;
+}
+
+body.is-scrolling .sprite2{
+    animation-play-state: running;
+}
+
+.sprite1{
+    z-index: 1;
+    position: absolute;
+    top: 820vh;
+    left: 30vw;
+    background-image: url(../img/img_personnages/kiwi/spritesheet_kiwi.png);
+    width: 30vw;
+    aspect-ratio: 1/1;
+    background-size:12000% 100%;
+    animation-name: kiwi;
+    animation-duration: 1.5s;
+    animation-timing-function: steps(120);
+    animation-iteration-count: infinite;
+    animation-play-state:paused;
+}
+
+.sprite2{
+    background-image: url(../img/img_elements_visuels/spritesheet_enseigne.png);
+    animation-duration: 1s;
+    width: 30vw;
+    aspect-ratio: 1/1;
+    background-size: 4800% 100%;
+    animation-name: enseigne;
+    animation-timing-function: steps(48);
+    animation-iteration-count: infinite;
+    animation-play-state:paused;
+}
+
+@keyframes kiwi {
+    from { background-position: 0 0; }
+    to { background-position: -12000% 0; }
+}
+@keyframes enseigne {
+    from { background-position: 0 0; }
+    to { background-position: -4800% 0; }
+}
+
 /*-------MEDIA QUERIES-------*/
 
 
