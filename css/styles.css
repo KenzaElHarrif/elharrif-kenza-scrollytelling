@@ -27,10 +27,6 @@
 }
 
 body{
-   /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    overflow-x: hidden;*/
     margin: 0;
     width: 100vw;
     background-color: var(--beige);
@@ -74,8 +70,6 @@ h1{
     font-size: 11px;
 }
 
-
-
 /*----------SECTION MAIN------------*/
 section{
     display: none;
@@ -98,19 +92,17 @@ section{
     width: 30vw;
     height: auto;
     position: absolute;
-    top: 155vh;
+    bottom: -100vh;
     left: 25vw;
     object-fit:cover;
-
     z-index: 101;
 }
 
 .scene1-lilo-triste-2{
-    z-index: 1;
     position: absolute;
     width: 30vw;
     object-fit:cover;
-    top: 355vh;
+    bottom: -300vh;
     z-index: 100;
 }
 
@@ -182,29 +174,27 @@ section{
 
 
 #chapitre2{
-    /*overflow: hidden;*/
     display: block;
+    overflow: hidden;
     border: 4px solid rgba(218, 0, 0, 0.5); 
     position: relative;
     top: 0;
     width: 100vw;
     height:100vh;
-    background-size: cover;
 }
 
 .scene2-titre{
     position: relative;
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(180deg, var(--vertgazon) 0%, /*var(--vertpale)*/ var(--orange) 100%);
+    background: linear-gradient(180deg, var(--vertgazon) 0%, var(--vertpale) 100%);
 }
 
 .scene2{
     position: relative;
     width: 100vw;
     height: 300vh;
-    background-size:cover;
-    background-image: url(../img/img_arriere_plan/scene2_elements/scene2_fond.jpg);
+    object-fit:cover;
 }
 
 .scene2-lilo-tombe{
@@ -239,8 +229,8 @@ section{
     position: absolute;
     width: 35vw;
     height: 35vw;
-    left: 30vw;
-    top: 195vh;
+    left: 33vw;
+    top: 125vh;
     z-index: 1;
 }
 
@@ -269,69 +259,132 @@ section{
 
 .scene2-poisson4{
     position: absolute;
-    right: 30vh;
-    top: 430vh;
+    right: 25vh;
+    top: 370vh;
     width: 35vw;
     z-index: 1;
 }
 
+/*---------Chapitre 3--------*/
+
 #chapitre3{
+    overflow: hidden;
+    display: block;
     border: 4px solid rgba(218, 0, 0, 0.5); 
     position: relative;
-    top: 900vh;
-    width: 100vw;
-    height:100vh;
-    background-size: cover;
-}
-#chapitre4{
-    border: 4px solid rgba(218, 0, 0, 0.5); 
-    position: relative;
-    top: 1400vh;
-    width: 100vw;
-    height:100vh;
-    background-size: cover;
-}
-
-#chapitre5{
-    border: 1px solid rgba(218, 0, 0, 0.5); 
-    position: relative;
-    top: 2500vh;
-    width: 100vw;
-    height:100vh;
-    background-size: cover;
-}
-#chapitre6{
-    border: 1px solid rgba(218, 0, 0, 0.5); 
-    position: relative;
-    top: 2400vh;
     width: 100vw;
     height:100vh;
 }
-
-
-
-
-
 
 .scene3-titre{
     position: relative;
     width: 100vw;
-    height: 300vh;
+    height: 100vh;
     background: linear-gradient(180deg, var(--rose) 0%, var(--rosebonbon) 100%);
 }
 .scene3{
     position: relative;
     width: 100vw;
-    height: 300vh;
-    background-size:cover;
-    background-position: 0, 50%;
-    background-image: url(../img/img_arriere_plan/scene3_elements/scene3_fond.jpg);
+    object-fit:cover;
+}
+
+.scene3-nuage{
+    position: absolute;
+    bottom: 1%;
+    width: 100%;
+    z-index: 1;
+}
+
+.scene3-lilo-mimi{
+    position: absolute;
+    bottom: 30%;
+    width: 100%;
+    z-index: 1;
+}
+
+.sur-nuage-2{
+    position: absolute;
+    width: 40vw;
+    height:40vw;
+    bottom: -100vh;
+    z-index: 1;
+}
+
+.scene3-cristal-1{
+    width: 10vw;
+    top: 110vh;
+    left: 39vw;
+    position: absolute;
+    z-index: 1;
+}
+
+.scene3-cristal-2{
+    width: 10vw;
+    top: 110vh;
+    left: 51vw;
+    position: absolute;
+    z-index: 1;
+}
+
+.scene3-cristal-3{
+    width: 10vw;
+    top: 100vh;
+    left: 45vw;
+    position: absolute;
+    z-index: 1;
+}
+
+.scene3-cristal-4{
+    transform: rotate(-90deg);
+    width: 10vw;
+    top: 100vh;
+    position: absolute;
+    z-index: 1;
+}
+
+.scene3-cristal-5{
+    transform: rotate(-110deg);
+    width: 10vw;
+    left: 36vw;
+    top: 100vh;
+    position: absolute;
+    z-index: 1;
+}
+
+.scene3-cristal-6{
+    transform: rotate(-110deg);
+    width: 10vw;
+    top: 100vh;
+    left: 68vw;
+    position: absolute;
+    z-index: 1;
+}
+
+.scene3-cristal-7{
+    transform: rotate(-90deg);
+    width: 10vw;
+    top: 100vh;
+    left: 88vw;
+    position: absolute;
+    z-index: 1;
+}
+
+/*---------Chapitre 4--------*/
+
+#chapitre4{
+    overflow: hidden;
+    display: block;
+    border: 4px solid rgba(218, 0, 0, 0.5); 
+    position: relative;
+    width: 100vw;
+    height:100vh;
+    background-size: cover;
 }
 
 .scene4-titre{
     position: relative;
     width: 100vw;
-    height: 300vh;
+    height: 100vh;
     background: linear-gradient(180deg, var(--rosebonbon) 0%, var(--orangepale) 100%);
 }
 
@@ -360,7 +413,7 @@ section{
 .scene4-noir{
     position: relative;
     width: 100vw;
-    height: 400vh;
+    height: 100vh;
     background-image: url(../img/img_arriere_plan/scene4_elements/scene4_fond_02.png);
 }
 
@@ -376,6 +429,54 @@ section{
     width: 100vw;
     height: 100vh;
     background-color: var(--beige);
+}
+
+.scene4-nuage{
+    position: absolute;
+    bottom: 1%;
+    width: 100%;
+    z-index: 1;
+}
+
+.scene4-lilo-mimi{
+    position: absolute;
+    bottom: 30%;
+    width: 100%;
+    z-index: 1;
+}
+
+.sur-nuage-3{
+    width: 35vw;
+    height:35vw;
+    position: absolute;
+    top: 150vh;
+    z-index: 1;
+}
+
+.scene4-yeux-lilo{
+    position: absolute;
+    width: 10vw;
+    top: 440vh;
+    z-index: 1;
+}
+
+.scene4-yeux-mimi{
+    position: absolute;
+    left: 10vw;
+    top: 440vh;
+    width: 10vw;
+    z-index: 1;
+}
+
+/*---------Chapitre 5--------*/
+
+
+#chapitre5{
+    display: block;
+    border: 1px solid rgba(218, 0, 0, 0.5); 
+    position: relative;
+    width: 100vw;
+    height:100vh;
 }
 
 .scene5-titre{
@@ -401,6 +502,15 @@ section{
     background-color: var(--beigeciel);
 }
 
+/*---------Chapitre 6--------*/
+
+#chapitre6{
+    border: 1px solid rgba(218, 0, 0, 0.5); 
+    position: relative;
+    width: 100vw;
+    height:100vh;
+}
+
 .scene6-titre{
     position: relative;
     width: 100vw;
@@ -416,113 +526,6 @@ section{
     background-image: url(../img/img_arriere_plan/scene6_elements/scene6_fond.jpg);
 }
 
-/*---------IMAGES POUR ANIMATIONS--------*/
-
-
-
-
-/*---------SCENE-2--------*/
-
-
-
-
-/*---------SCENE-3--------*/
-
-.scene3-nuage{
-    display: none;
-    position: absolute;
-    bottom: 1%;
-    width: 100%;
-    z-index: 1;
-}
-
-.scene3-lilo-mimi{
-    display: none;
-    position: absolute;
-    bottom: 30%;
-    width: 100%;
-    z-index: 1;
-}
-
-.sur-nuage-2{
-    display: none;
-    background-color: red;
-    width: 40vw;
-    height:40vw;
-    position: fixed;
-    bottom: 5vh;
-    left: 30vw;
-    z-index: 1;
-}
-
-.scene3-cristal-1{
-    width: 10vw;
-    position: absolute;
-    z-index: 1;
-}
-
-.scene3-cristal-2{
-    width: 10vw;
-    position: absolute;
-    z-index: 1;
-}
-
-.scene3-cristal-3{
-    width: 10vw;
-    position: absolute;
-    z-index: 1;
-}
-
-.scene3-cristal-4{
-    width: 10vw;
-    position: absolute;
-    z-index: 1;
-}
-
-
-/*---------SCENE-4--------*/
-
-.scene4-nuage{
-    position: absolute;
-    bottom: 1%;
-    width: 100%;
-    z-index: 1;
-}
-
-.scene4-lilo-mimi{
-    position: absolute;
-    bottom: 30%;
-    width: 100%;
-    z-index: 1;
-}
-
-.sur-nuage-3{
-    width: 40vw;
-    height:40vw;
-    position: absolute;
-    bottom: 5vh;
-    z-index: 1;
-}
-
-.scene4-yeux-lilo{
-    position: absolute;
-    width: 10vw;
-    top: 320vh;
-    z-index: 1;
-}
-
-.scene4-yeux-mimi{
-    position: absolute;
-    left: 10vw;
-    top: 320vh;
-    width: 10vw;
-    z-index: 1;
-}
-
-.scene4-yeux-kiwi{
-    position: absolute;
-    width: 10vw;
-}
 
 
 img { border: 1px solid rgba(218, 0, 0, 0.5); }
@@ -544,7 +547,7 @@ body.is-scrolling .sprite2{
 .sprite1{
     z-index: 1;
     position: absolute;
-    top: 900vh;
+    top: 600vh;
     left: 30vw;
     background-image: url(../img/img_personnages/kiwi/spritesheet_kiwi.png);
     width: 30vw;
