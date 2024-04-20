@@ -30,6 +30,7 @@ body{
     margin: 0;
     width: 100vw;
     background-color: var(--beige);
+    overflow-x: hidden;
 }
 
 /*----------SECTION HEADER-------------*/
@@ -472,6 +473,7 @@ section{
 
 
 #chapitre5{
+    overflow: hidden;
     display: block;
     border: 1px solid rgba(218, 0, 0, 0.5); 
     position: relative;
@@ -502,9 +504,32 @@ section{
     background-color: var(--beigeciel);
 }
 
+.scene5-nuage{
+    position: absolute;
+    bottom: 1%;
+    width: 100%;
+    z-index: 1;
+}
+
+.scene5-lilo-mimi{
+    position: absolute;
+    bottom: 30%;
+    width: 100%;
+    z-index: 1;
+}
+
+.sur-nuage-4{
+    position: absolute;
+    width: 35vw;
+    height:35vw;
+    bottom: -100vh;
+    z-index: 1;
+}
+
 /*---------Chapitre 6--------*/
 
 #chapitre6{
+    display: block;
     border: 1px solid rgba(218, 0, 0, 0.5); 
     position: relative;
     width: 100vw;
@@ -515,17 +540,100 @@ section{
     position: relative;
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(180deg, var(--beigepale) 0%, var(--beigefonce) 100%);
+    background-color: var(--beigefonce);
 }
 
 .scene6{
     position: relative;
     width: 100vw;
     height: 100vh;
-    background-size: cover;
-    background-image: url(../img/img_arriere_plan/scene6_elements/scene6_fond.jpg);
+    object-fit: cover;
 }
 
+.scene6-fin{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--beige);
+}
+
+.scene6-lilo-mimi-calin{
+    position: absolute;
+    top: 140vh;
+    left: 25vw;
+    z-index: 105;
+    width: 35vw;
+}
+
+.scene6-escalier1{
+    position: absolute;
+    width: 55vw;
+    z-index: 104;
+    right: 0;
+    top: 158vh;
+}
+
+.scene6-escalier2{
+    position: absolute;
+    width: 55vw;
+    z-index: 104;
+    right: -10vw;
+    top: 150vh;
+}
+
+.scene6-escalier3{
+    position: absolute;
+    width: 55vw;
+    z-index: 104;
+    right: -20vw;
+    top: 142vh;
+}
+
+.scene6-escalier4{
+    position: absolute;
+    width: 55vw;
+    z-index: 104;
+    right: -30vw;
+    top: 134vh;
+}
+
+.scene6-escalier5{
+    position: absolute;
+    width: 55vw;
+    z-index: 104;
+    right: -40vw;
+    top: 126vh;
+}
+
+.scene6-escalier6{
+    position: absolute;
+    width: 55vw;
+    z-index: 104;
+    right: -50vw;
+    top: 118vh;
+}
+
+.scene6-lilo-droite{
+    z-index: 105;
+    width: 35vw;
+    position: absolute;
+    left: 35vw;
+    top: 140vh;
+}
+
+ #Calque_4{
+    position: absolute;
+    top: 10vh;
+    left: 40vw;
+    width: 20vw;
+ }
+
+ #Calque_3{
+    position: absolute;
+    top: 15vh;
+    left: 40vw;
+    width: 20vw;
+ }
 
 
 img { border: 1px solid rgba(218, 0, 0, 0.5); }
@@ -564,6 +672,7 @@ body.is-scrolling .sprite2{
     z-index: 1;
     position: absolute;
     top:158vh;
+    right: 5vw;
     background-image: url(../img/img_elements_visuels/spritesheet_enseigne.png);
     animation-duration: 1s;
     width: 20vw;
