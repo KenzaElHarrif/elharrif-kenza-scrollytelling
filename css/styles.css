@@ -72,9 +72,6 @@ h1{
 }
 
 /*----------SECTION MAIN------------*/
-section{
-    display: none;
-}
 
 /*---------Chapitre 1--------*/
 
@@ -86,7 +83,6 @@ section{
     height:100vh;
     background-color: var(--beige);
     overflow: hidden ;
-    display: block;
 }
 
 .scene1-lilo-triste-1{
@@ -175,7 +171,6 @@ section{
 
 
 #chapitre2{
-    display: block;
     overflow: hidden;
     border: 4px solid rgba(218, 0, 0, 0.5); 
     position: relative;
@@ -270,7 +265,6 @@ section{
 
 #chapitre3{
     overflow: hidden;
-    display: block;
     border: 4px solid rgba(218, 0, 0, 0.5); 
     position: relative;
     width: 100vw;
@@ -374,7 +368,6 @@ section{
 
 #chapitre4{
     overflow: hidden;
-    display: block;
     border: 4px solid rgba(218, 0, 0, 0.5); 
     position: relative;
     width: 100vw;
@@ -474,7 +467,6 @@ section{
 
 #chapitre5{
     overflow: hidden;
-    display: block;
     border: 1px solid rgba(218, 0, 0, 0.5); 
     position: relative;
     width: 100vw;
@@ -529,7 +521,7 @@ section{
 /*---------Chapitre 6--------*/
 
 #chapitre6{
-    display: block;
+    overflow: hidden;
     border: 1px solid rgba(218, 0, 0, 0.5); 
     position: relative;
     width: 100vw;
