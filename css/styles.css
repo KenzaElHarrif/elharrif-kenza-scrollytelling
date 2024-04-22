@@ -7,8 +7,10 @@
     --rose: #E9C5B5;
     --rosebonbon: #FDDDE2;
     --roseblanc: #FFF9FB;
+    --rosemitaine: #FF708E;
     --orangepale: #FFE5DA;
     --orange: #D8A48F;
+    --orangelilo: #C16A4A;
     --beige: #fffdf3;
     --beigefonce:#F4F1DE;
     --beigepale:#FBFAF5;
@@ -18,6 +20,7 @@
     --vert: #D6CE93;
     --vertgazon: #DDD7AB;
     --vertfonce: #A3A380;
+    --vertkiwi: #A0BD60;
 }
 
 *{
@@ -74,6 +77,10 @@ h1{
 /*----------SECTION MAIN------------*/
 
 /*---------Titres et sous-titres--------*/
+p{
+    position: absolute;
+    z-index: 100;
+}
 
 h2{
     position: absolute;
@@ -140,24 +147,22 @@ h3{
 }
 
 
-
-
 /*---------Chapitre 1--------*/
 #chapitre1 .defilement{
     height: 400vh;
 }
 section{
+    position: relative;
     display: none;
+    border: 1px solid rgba(218, 0, 0, 0.5); 
 }
 
 #chapitre1{
     display: block;
-    border: 4px solid rgba(218, 0, 0, 0.5); 
-    position: relative;
     width: 100vw;
     height:100vh;
     background-color: var(--beige);
-    /*overflow: hidden;*/
+    overflow: hidden;
 }
 
 .scene1-lilo-triste-1{
@@ -242,13 +247,40 @@ section{
     z-index: 80;
 }
 
+.scene1-texte1{
+    font-size: 2vw;
+    color: var(--orangelilo);
+    top:140vh;
+    left: 30vw;
+}
+
+.scene1-texte2{
+    font-size: 2vw;
+    color: var(--orangelilo);
+    top:140vh;
+    left: 30vw;
+}
+
+.scene1-texte3{
+    font-size: 2vw;
+    color: var(--orangelilo);
+    top: 240vh;
+    left: 30vw;
+}
+
+.scene1-texte4{
+    font-size: 2vw;
+    color: var(--orangelilo);
+    top: 340vh;
+    left: 40vw;
+}
+
 /*---------Chapitre 2--------*/
 
 
 #chapitre2{
+    display: block;
     overflow: hidden;
-    border: 4px solid rgba(218, 0, 0, 0.5); 
-    position: relative;
     top: 0;
     width: 100vw;
     height:100vh;
@@ -272,6 +304,7 @@ section{
     position: absolute;
     width: 25vw;
     left: 75vw;
+    top: 0;
     z-index: 3;
 }
 
@@ -336,12 +369,33 @@ section{
     z-index: 1;
 }
 
+.scene2-texte1{
+    font-size: 1.5vw;
+    color: var(--rosemitaine);
+    top: 115vh;
+    left: 10vw;
+}
+
+.scene2-texte2{
+    font-size: 1.5vw;
+    color: var(--orangelilo);
+    top: 110vh;
+    left: 55vw;
+}
+
+.scene2-texte3{
+    width: 40vw;
+    font-size: 1.5vw;
+    color: var(--rosemitaine);
+    top: 115vh;
+    left: 10vw;
+}
+
 /*---------Chapitre 3--------*/
 
 #chapitre3{
+    display: block;
     overflow: hidden;
-    border: 4px solid rgba(218, 0, 0, 0.5); 
-    position: relative;
     width: 100vw;
     height:100vh;
 }
@@ -439,12 +493,18 @@ section{
     z-index: 1;
 }
 
+.scene3-texte{
+    font-size: 1.5vw;
+    color: var(--rosemitaine);
+    top: 60vh;
+    left: 30vw;
+}
+
 /*---------Chapitre 4--------*/
 
 #chapitre4{
+    display: block;
     overflow: hidden;
-    border: 4px solid rgba(218, 0, 0, 0.5); 
-    position: relative;
     width: 100vw;
     height:100vh;
     background-size: cover;
@@ -522,28 +582,54 @@ section{
     z-index: 1;
 }
 
-.scene4-yeux-lilo{
-    position: absolute;
-    width: 10vw;
-    top: 440vh;
-    z-index: 1;
+.scene4-texte{
+    font-size: 1.5vw;
+    color: var(--rosemitaine);
+    top: 60vh;
+    left: 30vw;
 }
 
-.scene4-yeux-mimi{
-    position: absolute;
+.scene4-texte1,
+.scene4-texte3,
+.scene4-texte6,
+.scene4-texte8,
+.scene4-texte10{
+    font-size: 3vw;
+    color: var(--orangelilo);
+    top: 420vh;
     left: 10vw;
+}
+
+.scene4-texte2,
+.scene4-texte4,
+.scene4-texte7,
+.scene4-texte11{
+    font-size: 3vw;
+    color: var(--rosemitaine);
     top: 440vh;
-    width: 10vw;
-    z-index: 1;
+    left: 20vw;
+}
+
+.scene4-texte5,
+.scene4-texte9{
+    font-size: 3vw;
+    color: var(--vertkiwi);
+    top: 450vh;
+    left: 60vw;
+}
+
+.scene4-texte9,
+.scene4-texte10,
+.scene4-texte11{
+    left: 100vw;
 }
 
 /*---------Chapitre 5--------*/
 
 
 #chapitre5{
+    display: block;
     overflow: hidden;
-    border: 1px solid rgba(218, 0, 0, 0.5); 
-    position: relative;
     width: 100vw;
     height:100vh;
 }
@@ -593,12 +679,39 @@ section{
     z-index: 1;
 }
 
+
+.scene5-texte1{
+    font-size: 1.5vw;
+    color: var(--rosemitaine);
+    top: 110vh;
+    left: 10vw;
+}
+
+.scene5-texte2{
+    font-size: 1.5vw;
+    color: var(--orangelilo);
+    top: 105vh;
+    left: 35vw;
+}
+
+.scene5-texte3{
+    font-size: 1.5vw;
+    color: var(--rosemitaine);
+    top: 114vh;
+    left: 65vw;
+}
+
+.scene5-texte4{
+    font-size: 5vw;
+    color: var(--orangelilo);
+    top: 235vh;
+    left: 45vw;
+}
 /*---------Chapitre 6--------*/
 
 #chapitre6{
-    overflow: hidden;
-    border: 1px solid rgba(218, 0, 0, 0.5); 
-    position: relative;
+    display: block;
+    /*overflow: hidden;*/
     width: 100vw;
     height:100vh;
 }
@@ -689,6 +802,7 @@ section{
 }
 
  #Calque_4{
+    fill: var(--orange);
     position: absolute;
     top: 10vh;
     left: 40vw;
@@ -696,11 +810,51 @@ section{
  }
 
  #Calque_3{
+    fill: var(--orange);
     position: absolute;
     top: 15vh;
     left: 40vw;
     width: 20vw;
  }
+
+ .scene6-texte1{
+    font-size: 1.5vw;
+    color: var(--rosemitaine);
+    top: 55vh;
+    left: 45vw;
+}
+
+.scene6-texte2{
+    font-size: 1.5vw;
+    color: var(--orangelilo);
+    top: 65vh;
+    left: 27vw;
+}
+
+.scene6-texte3{
+    font-size: 2.5vw;
+    color: var(--rosemitaine);
+    top: 125vh;
+    left: 5vw;
+}
+
+.scene6-texte4{
+    font-size: 2.5vw;
+    color: var(--orangelilo);
+    top: 125vh;
+    left: 40vw;
+}
+
+ .fin{
+    font-family: Gorditas;
+    top: 270vh;
+    left: 41.5vw;
+    color: var(--orange);
+    position: absolute;
+    font-size: 10vw;
+ }
+
+
 
 
 img { border: 1px solid rgba(218, 0, 0, 0.5); }
@@ -738,11 +892,11 @@ body.is-scrolling .sprite2{
 .sprite2{
     z-index: 1;
     position: absolute;
-    top:158vh;
-    right: 5vw;
+    top:247.3vh;
+    right: 36vw;
     background-image: url(../img/img_elements_visuels/spritesheet_enseigne.png);
     animation-duration: 1s;
-    width: 20vw;
+    width: 25vw;
     aspect-ratio: 1/1;
     background-size: 4800% 100%;
     animation-name: enseigne;
@@ -760,14 +914,13 @@ body.is-scrolling .sprite2{
     to { background-position: -4800% 0; }
 }
 
-/*-------MEDIA QUERIES-------*/
-
-
-
-
 /*---------FOOTER--------*/
 footer{
+    display: none;
     text-align: center;
     color: var(--gris);
-   
+}
+
+.text-footer{
+    position: relative;
 }
