@@ -146,11 +146,15 @@ h3{
     left: 51.5vw;
 }
 
+/*--------------Défilements--------------*/
 
-/*---------Chapitre 1--------*/
 #chapitre1 .defilement{
     height: 400vh;
 }
+
+
+/*---------Chapitre 1--------*/
+
 section{
     position: relative;
     display: none;
@@ -711,7 +715,7 @@ section{
 
 #chapitre6{
     display: block;
-    /*overflow: hidden;*/
+    overflow: hidden;
     width: 100vw;
     height:100vh;
 }
