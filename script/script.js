@@ -29,6 +29,14 @@ const tlChap4 = gsap.timeline({
     }
 });
 
+const tlChap5 = gsap.timeline({
+    scrollTrigger:{
+        trigger:"#chapitre5",
+        pin:true,
+        markers:true,
+    }
+});
+
 
 let timer;
 
@@ -57,7 +65,7 @@ section.forEach(function(monTitre) {
     gsap.timeline({
       scrollTrigger:{
         markers:true,
-        start:"top",
+        start:"top 50%",
         end:"bottom",
         trigger: monTitre,
         scrub:true,
@@ -150,7 +158,14 @@ tlChap4
 .fromTo(".scene4-fond-blanc",{y:0}, {y:"-400vh", ease:"none", duration:7},4.5)
 .fromTo(".scene4-transition",{y:"0"}, {y:"-400vh", ease:"none", duration:7},4.5)
 .fromTo(".scene4-noir",{y:"0"}, {y:"-400vh", ease:"none", duration:7},4.5)
-//Animation de texte
+.fromTo(".scene4-noir",{}, {y:"-400vh", ease:"none", duration:7},12)
+//Animation de texte va être ici.
+.fromTo(".scene4-noir",{y:"-400vh"}, {y:"-600vh", ease:"none", duration:3},16)
+.fromTo(".scene4-transition2",{y:"-400vh"}, {y:"-600vh", ease:"none", duration:3},16)
+.fromTo(".scene4-kiwi",{y:"-400vh"}, {y:"-600vh", ease:"none", duration:3},16)
+
+//CHAPITRE 5
+
 
 
 
