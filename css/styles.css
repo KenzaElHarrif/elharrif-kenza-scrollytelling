@@ -93,7 +93,7 @@ h2{
 
 h3{
     position: absolute;
-    top: 35vh;
+    top: 37vh;
     font-size: 2vw;
     color: var(--gris);
 }
@@ -196,24 +196,31 @@ section{
     position: absolute;
     height: 100vh;
     width: 100vw;
-    object-fit:cover;
     z-index: 90;
+    background-size:cover;
+    background-repeat: repeat-x;
+    background-position: 0 0;
+    background-image: url(../img/img_arriere_plan/scene_1_elements/scene1_arbre_derriere.png);
 }
 
 .scene1-parallax2{
     position: absolute;
     height: 100vh;
     width: 100vw;
-    object-fit:cover;
     z-index: 91;
+    background-position: 0 0;
+    background-size:cover;
+    background-image: url(../img/img_arriere_plan/scene_1_elements/scene1_gazon.png);
 }
 
 .scene1-parallax3{
     position: absolute;
     height: 100vh;
     width: 100vw;
-    object-fit:cover;
     z-index: 105;
+    background-position: 0 0;
+    background-size:cover;
+    background-image: url(../img/img_arriere_plan/scene_1_elements/scene1_arbre_devant.png);
 }
 
 .scene1-parallax4{
@@ -221,8 +228,10 @@ section{
     position: absolute;
     height: 100vh;
     width: 100vw;
-    object-fit:cover;
     z-index: 107;
+    background-position: 0 0;
+    background-size:cover;
+    background-image: url(../img/img_arriere_plan/scene_1_elements/scene1_buissons.png);
 }
 
 .scene1-fond{
@@ -252,12 +261,16 @@ section{
 }
 
 .scene1-texte3{
+    display: none;
+    top: 30vh;
     font-size: 2vw;
     color: var(--orangelilo);
     left: 30vw;
 }
 
 .scene1-texte4{
+    display: none;
+    top: 30vh;
     font-size: 2vw;
     color: var(--orangelilo);
     left: 40vw;
@@ -322,7 +335,6 @@ section{
     width: 35vw;
     height: 35vw;
     left: 33vw;
-    top: 125vh;
     z-index: 1;
 }
 
