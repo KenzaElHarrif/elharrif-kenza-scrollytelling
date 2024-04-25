@@ -1,5 +1,35 @@
 gsap.registerPlugin(ScrollTrigger);
 
+const tlChap1 = gsap.timeline({
+    scrollTrigger:{
+        trigger:"#chapitre1",
+        pin:true,
+        markers:true,
+    }
+});
+const tlChap2 = gsap.timeline({
+    scrollTrigger:{
+        trigger:"#chapitre2",
+        pin:true,
+        markers:true,
+    }
+});
+const tlChap3 = gsap.timeline({
+    scrollTrigger:{
+        trigger:"#chapitre3",
+        pin:true,
+        markers:true,
+    }
+});
+const tlChap4 = gsap.timeline({
+    scrollTrigger:{
+        trigger:"#chapitre4",
+        pin:true,
+        markers:true,
+    }
+});
+
+
 let timer;
 
 
@@ -17,25 +47,32 @@ window.addEventListener("scroll", () => {
 gsap.set('.appel', { y: 0, ease:"power3.in"})
 gsap.from('.appel', { y: '35%', repeat:-1, yoyo:true, ease:"power1.inOut"});
 
-/*------Défilement de chaque chapitres test--------*/
+//Foreach titre sections
+let section = document.querySelectorAll("section")
+
+section.forEach(function(monTitre) {
+    let h2 = monTitre.querySelectorAll("h2");
+    let h3 = monTitre.querySelectorAll("h3");
+    
+    gsap.timeline({
+      scrollTrigger:{
+        markers:true,
+        start:"top",
+        end:"bottom",
+        trigger: monTitre,
+        scrub:true,
+      }
+    })
+    .fromTo(h2, {opacity:0, y:0},{opacity:1, y: "-3vh", ease:"power1.inOut", duration:1})
+    .fromTo(h3, {opacity:0, x:"-3vw"},{opacity:1, x: 0, ease:"power1.inOut", duration:1.5},0.5)
+})
 
 
-/*gsap.to('.defilement1', {y: "-300vh", ease:"linear", duration:5,
-scrollTrigger: {
-    pin: true,
-    markers:true,
-    scrub: 0.5,
-    start: 'top 0%',
-    end: 'bottom 73%',
-    trigger: '#chapitre1'}
-
-})*/
-
-//gsap.to(".scene1-lilo-triste-1, .scene1-lilo-triste-1", {y:"300vh"})
 
 //CHAPITRE 1
-gsap.timeline()
+
 //parallax
+tlChap1
 .to(".scene1-parallax1", { backgroundPosition: "100% 0", ease: "none",duration:22, repeat: -1},0)
 .to(".scene1-parallax2", { backgroundPosition: "100% 0", ease: "none",duration:19, repeat: -1},0)
 .to(".scene1-parallax3", { backgroundPosition: "100% 0", ease: "none",duration:15, repeat: -1},0)
@@ -56,9 +93,8 @@ gsap.timeline()
 
 
 //CHAPITRE 2
-gsap.timeline()
-
-.fromTo(".scene2-lilo-tombe", {y:0, opacity:1},{y:"30vh", opacity:0, duration:3})
+tlChap2
+.fromTo(".scene2-lilo-tombe", {y:0, opacity:1},{y:"30vh", opacity:0, ease:"power1-out", duration:3},1)
 .fromTo(".scene2-titre",{y:0}, {y:"-100vh", ease:"none", duration:3},2.5)
 .fromTo(".scene2",{y:"0"}, {y:"-100vh", ease:"none", duration:3},2.5)
 .fromTo(".sur-nuage-1",{y:"150vh"}, {y:"150vh", ease:"none", duration:3},0)
@@ -66,6 +102,9 @@ gsap.timeline()
 .fromTo('.sur-nuage-1', {y:"-60vh"},{y: "-61vh", ease:"power1.inOut", yoyo:true, repeat:-1, duration:0.5})
 
 //note à moi-même: texte va se mettre ici<--------------
+.fromTo(".scene2-texte1", {y:"100vh"}, {y:"-150vh",ease:"none", duration:5},6)
+.fromTo(".scene2-texte2", {y:"100vh"}, {y:"-150vh",ease:"none", duration:5},7)
+.fromTo(".scene2-texte3", {y:"100vh"}, {y:"-150vh",ease:"none", duration:5},8)
 .fromTo(".sur-nuage-1",{y:"-61vh", opacity:1}, {y:"-200vh", ease:"power1.inOut", opacity:0, duration:4},10.5)
 .fromTo(".scene2",{}, {y:"-300vh", ease:"none", duration:5}, 10.5)
 .fromTo(".scene2-poisson1",{y:"-100vh"},{y:"-300vh",ease:"none", duration:5}, 10.5)
@@ -79,15 +118,46 @@ gsap.timeline()
 
 
 //CHAPITRE 3
+tlChap3
+.fromTo(".scene3-titre",{y:0}, {y:"-100vh", ease:"none", duration:3},2.5)
+.fromTo(".scene3",{y:"0"}, {y:"-100vh", ease:"none", duration:3},2.5)
+.fromTo(".scene3",{}, {y:"-235vh", ease:"none", duration:5}, 9.5)
+.fromTo(".sur-nuage-2",{y:"100vh"}, {y:"-115vh", ease:"power1.Out", duration:3},0)
+.fromTo('.sur-nuage-2', {y:"-115vh"},{y: "-113vh", ease:"power1.inOut", yoyo:true, repeat:-1, duration:0.5}, 3)
+.fromTo(".sur-nuage-2",{x:"0"}, {x:"35vw", ease:"power1.inOut",duration:2},4)
+.fromTo(".sur-nuage-2",{}, {x:"60vw", ease:"power1.inOut",duration:2},6)
+.fromTo(".sur-nuage-2",{}, {x:"100vw", ease:"power1.inOut",duration:2},8)
+//gros cristal
+.fromTo(".scene3-cristal-1", {y:"-80vh"},{y:"40vh", ease:"power1.in", duration:2},14.5)
+.fromTo(".scene3-cristal-2", {y:"-80vh"},{y:"40vh",ease:"power1.in", duration:2},14.5)
+.fromTo(".scene3-cristal-3", {y:"-80vh", rotation:0},{y:"40vh",ease:"power1.in", rotation:0, duration:2},14.5)
+.fromTo(".scene3-cristal-3",{rotation:-5},{rotation:5, yoyo:true, repeat:1}, 16.5)
+.fromTo(".scene3-cristal-1", {x:0, opacity:1},{y:"-30vh",x:"-60vw", opacity:0, duration:2},17)
+.fromTo(".scene3-cristal-2", {x:0, opacity:1},{y:"-30vh",x:"60vw", opacity:0,duration:2},17)
+//petit cristaux
+.fromTo(".scene3-cristal-4",{y:"-20vh"},{y:"110vh", duration:1.5},4.5)
+.fromTo(".scene3-cristal-5",{y:"-20vh"},{y:"110vh", duration:1.5},6.5)
+.fromTo(".scene3-cristal-6",{y:"-20vh"},{y:"110vh", duration:1.5},8.5)
+.fromTo(".scene3-cristal-7",{y:"-20vh"},{y:"110vh", duration:1.5},9)
 
+//CHAPITRE 4
+
+tlChap4
+.fromTo('.sur-nuage-3', {y:"15vh"},{y: "18vh", ease:"power1.inOut", yoyo:true, repeat:-1, duration:0.5})
+.fromTo(".sur-nuage-3",{x:"-100vw"}, {x:"100vw", ease:"power1.inOut",duration:4},1)
+.fromTo(".scene4-titre",{y:0}, {y:"-400vh", ease:"none", duration:7},4.5)
+.fromTo(".scene4-fond",{y:"0"}, {y:"-400vh", ease:"none", duration:7},4.5)
+.fromTo(".scene4-fond-blanc",{y:0}, {y:"-400vh", ease:"none", duration:7},4.5)
+.fromTo(".scene4-transition",{y:"0"}, {y:"-400vh", ease:"none", duration:7},4.5)
+.fromTo(".scene4-noir",{y:"0"}, {y:"-400vh", ease:"none", duration:7},4.5)
+//Animation de texte
 
 
 
 
  
-    let h2 = document.querySelectorAll("h2");
-    let h3 = document.querySelectorAll("h3");
+    
 
-    gsap.timeline()
+    /*gsap.timeline()
     .fromTo(h2, {opacity:0, y:0},{opacity:1, y: "-3vh", ease:"power1.inOut", duration:1})
-    .fromTo(h3, {opacity:0, x:"-3vw"},{opacity:1, x: 0, ease:"power1.inOut", duration:1.5},0.5)
+    .fromTo(h3, {opacity:0, x:"-3vw"},{opacity:1, x: 0, ease:"power1.inOut", duration:1.5},0.5)*/

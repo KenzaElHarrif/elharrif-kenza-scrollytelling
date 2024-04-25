@@ -370,25 +370,31 @@ section{
 }
 
 .scene2-texte1{
+    position: absolute;
     font-size: 1.5vw;
     color: var(--rosemitaine);
-    top: 115vh;
+    top: 100vh;
     left: 10vw;
+    z-index: 1;
 }
 
 .scene2-texte2{
+    top: 100vh;
+    position: absolute;
     font-size: 1.5vw;
     color: var(--orangelilo);
-    top: 110vh;
     left: 55vw;
+    z-index: 1;
 }
 
 .scene2-texte3{
+    top: 100vh;
+    position: absolute;
     width: 40vw;
     font-size: 1.5vw;
     color: var(--rosemitaine);
-    top: 115vh;
     left: 10vw;
+    z-index: 1;
 }
 
 /*---------Chapitre 3--------*/
@@ -428,15 +434,14 @@ section{
 
 .sur-nuage-2{
     position: absolute;
-    width: 40vw;
-    height:40vw;
+    width: 30vw;
+    height:30vh;
     bottom: -100vh;
     z-index: 1;
 }
 
 .scene3-cristal-1{
     width: 10vw;
-    top: 110vh;
     left: 39vw;
     position: absolute;
     z-index: 1;
@@ -444,7 +449,6 @@ section{
 
 .scene3-cristal-2{
     width: 10vw;
-    top: 110vh;
     left: 51vw;
     position: absolute;
     z-index: 1;
@@ -452,7 +456,6 @@ section{
 
 .scene3-cristal-3{
     width: 10vw;
-    top: 100vh;
     left: 45vw;
     position: absolute;
     z-index: 1;
@@ -461,7 +464,6 @@ section{
 .scene3-cristal-4{
     transform: rotate(-90deg);
     width: 10vw;
-    top: 100vh;
     position: absolute;
     z-index: 1;
 }
@@ -470,7 +472,6 @@ section{
     transform: rotate(-110deg);
     width: 10vw;
     left: 36vw;
-    top: 100vh;
     position: absolute;
     z-index: 1;
 }
@@ -478,7 +479,6 @@ section{
 .scene3-cristal-6{
     transform: rotate(-110deg);
     width: 10vw;
-    top: 100vh;
     left: 68vw;
     position: absolute;
     z-index: 1;
@@ -487,7 +487,6 @@ section{
 .scene3-cristal-7{
     transform: rotate(-90deg);
     width: 10vw;
-    top: 100vh;
     left: 88vw;
     position: absolute;
     z-index: 1;
@@ -496,8 +495,8 @@ section{
 .scene3-texte{
     font-size: 1.5vw;
     color: var(--rosemitaine);
-    top: 60vh;
-    left: 30vw;
+    top: 50vh;
+    left: 38vw;
 }
 
 /*---------Chapitre 4--------*/
@@ -578,7 +577,6 @@ section{
     width: 35vw;
     height:35vw;
     position: absolute;
-    top: 150vh;
     z-index: 1;
 }
 
