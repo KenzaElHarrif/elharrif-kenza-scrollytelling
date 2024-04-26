@@ -37,9 +37,17 @@ const tlChap5 = gsap.timeline({
     }
 });
 
+const tlChap6 = gsap.timeline({
+    scrollTrigger:{
+        trigger:"#chapitre6",
+        pin:true,
+        markers:true,
+    }
+});
 
+
+//Sprites
 let timer;
-
 
 window.addEventListener("scroll", () => {
     document.body.classList.add("is-scrolling");
@@ -52,6 +60,7 @@ window.addEventListener("scroll", () => {
 
 });
 
+//Appel à l'action
 gsap.set('.appel', { y: 0, ease:"power3.in"})
 gsap.from('.appel', { y: '35%', repeat:-1, yoyo:true, ease:"power1.inOut"});
 
@@ -152,7 +161,7 @@ tlChap3
 
 tlChap4
 .fromTo('.sur-nuage-3', {y:"15vh"},{y: "18vh", ease:"power1.inOut", yoyo:true, repeat:-1, duration:0.5})
-.fromTo(".sur-nuage-3",{x:"-100vw"}, {x:"100vw", ease:"power1.inOut",duration:4},1)
+.fromTo(".sur-nuage-3",{x:"-100vw"}, {x:"100vw", ease:"power1.inOut",duration:7},1)
 .fromTo(".scene4-titre",{y:0}, {y:"-400vh", ease:"none", duration:7},4.5)
 .fromTo(".scene4-fond",{y:"0"}, {y:"-400vh", ease:"none", duration:7},4.5)
 .fromTo(".scene4-fond-blanc",{y:0}, {y:"-400vh", ease:"none", duration:7},4.5)
@@ -162,15 +171,34 @@ tlChap4
 //Animation de texte va être ici.
 .fromTo(".scene4-noir",{y:"-400vh"}, {y:"-600vh", ease:"none", duration:3},16)
 .fromTo(".scene4-transition2",{y:"-400vh"}, {y:"-600vh", ease:"none", duration:3},16)
-.fromTo(".scene4-kiwi",{y:"-400vh"}, {y:"-600vh", ease:"none", duration:3},16)
+.fromTo(".scene4-kiwi",{y:"-400vh"}, {y:"-560vh", ease:"none", duration:3},16)
 
 //CHAPITRE 5
 
+tlChap5
+.fromTo(".scene5-titre", {opacity:1}, {opacity:1, duration:2},0)
+.fromTo(".scene5-titre", {opacity:1}, {opacity:0, duration:4},3)
+.fromTo('.sur-nuage-4', {y:"0vh"},{y: "3vh", ease:"power1.inOut", yoyo:true, repeat:-1, duration:0.5}, 0)
+.fromTo('.sur-nuage-4', {x:"-100vw"},{x: "0vw", ease:"power1.inOut", duration:6}, 3)
+.fromTo('.sur-nuage-4', {},{x: "30vw", ease:"power1.inOut", duration:4})
+.fromTo('.sur-nuage-4', {},{x: "100vw", ease:"power1.inOut", duration:4})
+.fromTo('.sprite2', {opacity:0},{opacity:1, duration:4})
 
+//CHAPITRE 6
 
-
-
-
+tlChap6
+.fromTo(".scene6-titre", {y:0}, {y:"-100vh",ease: "none", duration:2},2)
+.fromTo(".scene6", {y:0}, {y:"-100vh",ease: "none", duration:2},2)
+.fromTo(".scene6-escalier1",{x:"100vw"}, {x:"0",ease: "power1.out", duration:2},3)
+.fromTo(".scene6-escalier2",{x:"100vw"}, {x:"0",ease: "power1.out", duration:2},3.3)
+.fromTo(".scene6-escalier3",{x:"100vw"}, {x:"0",ease: "power1.out", duration:2},3.6)
+.fromTo(".scene6-escalier4",{x:"100vw"}, {x:"0",ease: "power1.out", duration:2},3.9)
+.fromTo(".scene6-escalier5",{x:"100vw"}, {x:"0",ease: "power1.out", duration:2},4.2)
+.fromTo(".scene6-escalier6",{x:"100vw"}, {x:"0",ease: "power1.out", duration:2},4.5)
+.fromTo(".scene6-lilo-mimi-calin", {opacity:0}, {opacity:1, duration:2},4.5)
+.fromTo(".scene6-lilo-mimi-calin", {}, {opacity:0, duration:4},8)
+.fromTo(".scene6-lilo-droite", {opacity:0}, {opacity:1, duration:4},8)
+.fromTo(".scene6-lilo-droite", {opacity:0}, {opacity:1, duration:4},9)
  
     
 

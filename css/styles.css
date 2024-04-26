@@ -259,22 +259,6 @@ section{
     z-index: 95;
 }
 
-.scene1-texte3{
-    display: none;
-    top: 30vh;
-    font-size: 2vw;
-    color: var(--orangelilo);
-    left: 30vw;
-}
-
-.scene1-texte4{
-    display: none;
-    top: 30vh;
-    font-size: 2vw;
-    color: var(--orangelilo);
-    left: 40vw;
-}
-
 /*---------Chapitre 2--------*/
 
 
@@ -669,7 +653,7 @@ section{
     top: 20vh;
     width: 35vw;
     height:35vw;
-    z-index: 96;
+    z-index: 99;
 }
 
 
@@ -720,6 +704,7 @@ section{
     position: relative;
     width: 100vw;
     height: 100vh;
+    z-index: 90;
     object-fit: cover;
 }
 
@@ -731,67 +716,68 @@ section{
 }
 
 .scene6-lilo-mimi-calin{
+    bottom: 0;
     position: absolute;
-    top: 140vh;
     left: 25vw;
     z-index: 105;
     width: 35vw;
 }
 
 .scene6-escalier1{
+    bottom: 10vh;
     position: absolute;
     width: 55vw;
     z-index: 104;
     right: 0;
-    top: 158vh;
 }
 
 .scene6-escalier2{
+    bottom: 20vh;
     position: absolute;
     width: 55vw;
     z-index: 104;
     right: -10vw;
-    top: 150vh;
 }
 
 .scene6-escalier3{
+    bottom: 30vh;
     position: absolute;
     width: 55vw;
     z-index: 104;
     right: -20vw;
-    top: 142vh;
 }
 
 .scene6-escalier4{
+    bottom: 40vh;
     position: absolute;
     width: 55vw;
     z-index: 104;
     right: -30vw;
-    top: 134vh;
 }
 
 .scene6-escalier5{
+    bottom: 50vh;
     position: absolute;
     width: 55vw;
     z-index: 104;
     right: -40vw;
-    top: 126vh;
 }
 
 .scene6-escalier6{
+    bottom: 60vh;
     position: absolute;
     width: 55vw;
     z-index: 104;
     right: -50vw;
-    top: 118vh;
 }
 
 .scene6-lilo-droite{
+    bottom: 0;
+    opacity: 0;
     z-index: 105;
     width: 35vw;
     position: absolute;
-    left: 35vw;
-    top: 140vh;
+    left: 40vw;
 }
 
  #Calque_4{
@@ -882,6 +868,7 @@ body.is-scrolling .sprite2{
 }
 
 .sprite2{
+    opacity: 0;
     z-index: 96;
     position: absolute;
     bottom: 0vh;
