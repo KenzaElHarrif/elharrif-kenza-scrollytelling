@@ -154,12 +154,10 @@ h3{
 
 section{
     position: relative;
-    display: none;
     border: 1px solid rgba(218, 0, 0, 0.5); 
 }
 
 #chapitre1{
-    display: block;
     width: 100vw;
     height:100vh;
     background-color: var(--beige);
@@ -241,6 +239,7 @@ section{
     background-size:cover;
     background-position-x: 90%;
     z-index: 80;
+    background-image: url(../img/img_arriere_plan/scene_1_elements/scene1_fond_avec_trou.png);
 }
 
 .scene1-texte1{
@@ -280,7 +279,6 @@ section{
 
 
 #chapitre2{
-    display: block;
     overflow: hidden;
     top: 0;
     width: 100vw;
@@ -298,7 +296,8 @@ section{
     position: relative;
     width: 100vw;
     height: 300vh;
-    object-fit:cover;
+    background-image: url(../img/img_arriere_plan/scene2_elements/scene2_fond.jpg);
+    background-size:cover;
 }
 
 .scene2-lilo-tombe{
@@ -400,7 +399,6 @@ section{
 /*---------Chapitre 3--------*/
 
 #chapitre3{
-    display: block;
     overflow: hidden;
     width: 100vw;
     height:100vh;
@@ -415,7 +413,9 @@ section{
 .scene3{
     position: relative;
     width: 100vw;
-    object-fit:cover;
+    height: 220vh;
+    background-image: url(../img/img_arriere_plan/scene3_elements/scene3_fond.jpg);
+    background-size:cover;
 }
 
 .scene3-nuage{
@@ -502,7 +502,6 @@ section{
 /*---------Chapitre 4--------*/
 
 #chapitre4{
-    display: block;
     overflow: hidden;
     width: 100vw;
     height:100vh;
@@ -627,33 +626,28 @@ section{
 
 
 #chapitre5{
-    display: block;
     overflow: hidden;
     width: 100vw;
     height:100vh;
 }
 
 .scene5-titre{
-    position: relative;
+    z-index: 100;
+    position: absolute;
     width: 100vw;
     height: 100vh;
     background: linear-gradient(180deg, var(--beige) 0%, var(--beigefonce) 100%);
 }
 
 .scene5{
-    position: relative;
+    
+    z-index: 95;
+    position: absolute;
     width: 100vw;
     height: 100vh;
     background-size: cover;
     background-position: 0 60%;
     background-image: url(../img/img_arriere_plan/scene5_elements/scene5_fond.jpg);
-}
-
-.scene5-fond-blanc{
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    background-color: var(--beigeciel);
 }
 
 .scene5-nuage{
@@ -672,44 +666,44 @@ section{
 
 .sur-nuage-4{
     position: absolute;
+    top: 20vh;
     width: 35vw;
     height:35vw;
-    bottom: -100vh;
-    z-index: 1;
+    z-index: 96;
 }
 
 
 .scene5-texte1{
     font-size: 1.5vw;
     color: var(--rosemitaine);
-    top: 110vh;
     left: 10vw;
+    z-index: 99;
 }
 
 .scene5-texte2{
     font-size: 1.5vw;
     color: var(--orangelilo);
-    top: 105vh;
     left: 35vw;
+    z-index: 98;
 }
 
 .scene5-texte3{
     font-size: 1.5vw;
     color: var(--rosemitaine);
-    top: 114vh;
     left: 65vw;
+    z-index: 97;
 }
 
 .scene5-texte4{
     font-size: 5vw;
     color: var(--orangelilo);
-    top: 235vh;
+    top: 40vh;
     left: 45vw;
+    z-index: 96;
 }
 /*---------Chapitre 6--------*/
 
 #chapitre6{
-    display: block;
     overflow: hidden;
     width: 100vw;
     height:100vh;
@@ -856,7 +850,7 @@ section{
 
 
 
-img { border: 1px solid rgba(218, 0, 0, 0.5); }
+img { border: 1px solid green; }
 
 /*----------ANIMATIONS SPRITESHEET------------*/
 
@@ -888,9 +882,9 @@ body.is-scrolling .sprite2{
 }
 
 .sprite2{
-    z-index: 1;
+    z-index: 96;
     position: absolute;
-    top:247.3vh;
+    bottom: 0vh;
     right: 36vw;
     background-image: url(../img/img_elements_visuels/spritesheet_enseigne.png);
     animation-duration: 1s;
@@ -914,7 +908,7 @@ body.is-scrolling .sprite2{
 
 /*---------FOOTER--------*/
 footer{
-    display: none;
+    height: 30vh;
     text-align: center;
     color: var(--gris);
 }

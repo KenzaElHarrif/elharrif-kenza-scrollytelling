@@ -129,7 +129,7 @@ tlChap2
 tlChap3
 .fromTo(".scene3-titre",{y:0}, {y:"-100vh", ease:"none", duration:3},2.5)
 .fromTo(".scene3",{y:"0"}, {y:"-100vh", ease:"none", duration:3},2.5)
-.fromTo(".scene3",{}, {y:"-235vh", ease:"none", duration:5}, 9.5)
+.fromTo(".scene3",{}, {y:"-220vh", ease:"none", duration:5}, 9.5)
 .fromTo(".sur-nuage-2",{y:"100vh"}, {y:"-115vh", ease:"power1.Out", duration:3},0)
 .fromTo('.sur-nuage-2', {y:"-115vh"},{y: "-113vh", ease:"power1.inOut", yoyo:true, repeat:-1, duration:0.5}, 3)
 .fromTo(".sur-nuage-2",{x:"0"}, {x:"35vw", ease:"power1.inOut",duration:2},4)
@@ -170,9 +170,12 @@ tlChap4
 
 
 
+
  
     
 
     /*gsap.timeline()
     .fromTo(h2, {opacity:0, y:0},{opacity:1, y: "-3vh", ease:"power1.inOut", duration:1})
     .fromTo(h3, {opacity:0, x:"-3vw"},{opacity:1, x: 0, ease:"power1.inOut", duration:1.5},0.5)*/
+
+//Chapitre 6
