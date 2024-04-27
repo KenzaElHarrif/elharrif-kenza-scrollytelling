@@ -175,10 +175,13 @@ section{
 }
 
 .scene1-lilo-triste-2{
-    position: absolute;
+    display: none;
     width: 30vw;
+    height: auto;
+    position: absolute;
+    left: 25vw;
     object-fit:cover;
-    z-index: 100;
+    z-index: 101;
 }
 
 .scene1-titre{
@@ -244,19 +247,19 @@ section{
 
 .scene1-texte1{
     position: absolute;
-    top: 30vh;
-    z-index: 95;
-    font-size: 2vw;
+    top: 25vh;
+    z-index: 99;
+    font-size: 3vw;
     color: var(--orangelilo);
-    left: 30vw;
+    left: 10vw;
 }
 
 .scene1-texte2{
-    top: 30vh;
-    font-size: 2vw;
+    top: 35vh;
+    font-size: 3vw;
     color: var(--orangelilo);
-    left: 60vw;
-    z-index: 95;
+    left: 10vw;
+    z-index: 99;
 }
 
 /*---------Chapitre 2--------*/
@@ -354,7 +357,7 @@ section{
 
 .scene2-texte1{
     position: absolute;
-    font-size: 1.5vw;
+    font-size: 2.5vw;
     color: var(--rosemitaine);
     top: 100vh;
     left: 10vw;
@@ -364,7 +367,7 @@ section{
 .scene2-texte2{
     top: 100vh;
     position: absolute;
-    font-size: 1.5vw;
+    font-size: 2.5vw;
     color: var(--orangelilo);
     left: 55vw;
     z-index: 1;
@@ -374,7 +377,7 @@ section{
     top: 100vh;
     position: absolute;
     width: 40vw;
-    font-size: 1.5vw;
+    font-size: 2.5vw;
     color: var(--rosemitaine);
     left: 10vw;
     z-index: 1;
@@ -477,10 +480,11 @@ section{
 }
 
 .scene3-texte{
-    font-size: 1.5vw;
+    font-size: 3vw;
+    width: 40vw;
     color: var(--rosemitaine);
-    top: 50vh;
-    left: 38vw;
+    top: 2vh;
+    left: 10vw;
 }
 
 /*---------Chapitre 4--------*/
@@ -564,10 +568,9 @@ section{
 }
 
 .scene4-texte{
-    font-size: 1.5vw;
+    font-size: 3vw;
     color: var(--rosemitaine);
-    top: 60vh;
-    left: 30vw;
+    left: 10vw;
 }
 
 .scene4-texte1,
@@ -658,21 +661,24 @@ section{
 
 
 .scene5-texte1{
-    font-size: 1.5vw;
+    font-size: 2.5vw;
     color: var(--rosemitaine);
+    top:10vh;
     left: 10vw;
     z-index: 99;
 }
 
 .scene5-texte2{
-    font-size: 1.5vw;
+    top:10vh;
+    font-size: 2.5vw;
     color: var(--orangelilo);
     left: 35vw;
     z-index: 98;
 }
 
 .scene5-texte3{
-    font-size: 1.5vw;
+    top:10vh;
+    font-size: 2.5vw;
     color: var(--rosemitaine);
     left: 65vw;
     z-index: 97;
@@ -797,31 +803,33 @@ section{
  }
 
  .scene6-texte1{
-    font-size: 1.5vw;
+    font-size: 2.5vw;
     color: var(--rosemitaine);
-    top: 55vh;
-    left: 45vw;
+    top:  9vh;
+    left: 10vw;
 }
 
 .scene6-texte2{
-    font-size: 1.5vw;
+    width: 40vw;
+    font-size: 2.5vw;
     color: var(--orangelilo);
-    top: 65vh;
-    left: 27vw;
+    top: 19vh;
+    left: 10vw;
 }
 
 .scene6-texte3{
     font-size: 2.5vw;
     color: var(--rosemitaine);
-    top: 125vh;
-    left: 5vw;
+    top: 44vh;
+    left: 10vw;
 }
 
 .scene6-texte4{
+    opacity: 0;
     font-size: 2.5vw;
     color: var(--orangelilo);
-    top: 125vh;
-    left: 40vw;
+    top: 20vh;
+    left: 45vw;
 }
 
  .fin{
