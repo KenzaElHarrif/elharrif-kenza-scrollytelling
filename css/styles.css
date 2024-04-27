@@ -421,7 +421,7 @@ section{
     width: 30vw;
     height:30vh;
     bottom: -100vh;
-    z-index: 1;
+    z-index: 115;
 }
 
 .scene3-cristal-1{
@@ -718,7 +718,7 @@ section{
 .scene6-lilo-mimi-calin{
     bottom: 0;
     position: absolute;
-    left: 25vw;
+    left: 8vw;
     z-index: 105;
     width: 35vw;
 }
@@ -825,10 +825,12 @@ section{
 }
 
  .fin{
+    opacity: 0;
+    z-index: 90;
     font-family: Gorditas;
-    top: 270vh;
+    bottom: 20vh;
     left: 41.5vw;
-    color: var(--orange);
+    color: var(--orangelilo);
     position: absolute;
     font-size: 10vw;
  }

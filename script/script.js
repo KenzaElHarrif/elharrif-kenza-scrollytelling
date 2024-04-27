@@ -197,8 +197,18 @@ tlChap6
 .fromTo(".scene6-escalier6",{x:"100vw"}, {x:"0",ease: "power1.out", duration:2},4.5)
 .fromTo(".scene6-lilo-mimi-calin", {opacity:0}, {opacity:1, duration:2},4.5)
 .fromTo(".scene6-lilo-mimi-calin", {}, {opacity:0, duration:4},8)
-.fromTo(".scene6-lilo-droite", {opacity:0}, {opacity:1, duration:4},8)
-.fromTo(".scene6-lilo-droite", {opacity:0}, {opacity:1, duration:4},9)
+.fromTo(".scene6-lilo-droite", {opacity:0}, {opacity:1, duration:2},11)
+.fromTo(".scene6-lilo-droite", {rotation:0}, {rotation:-35, ease:"power1.out", duration:1},11.5)
+.fromTo(".scene6-lilo-droite", {x:0, y:0}, {x:"100vw", y:"-75vh",ease:"power1.inOut", duration:6},12)
+.fromTo(".scene6-escalier1",{}, {x:"100vw",ease: "power1.out", duration:2},15)
+.fromTo(".scene6-escalier2",{}, {x:"100vw",ease: "power1.out", duration:2},15.3)
+.fromTo(".scene6-escalier3",{}, {x:"100vw",ease: "power1.out", duration:2},15.6)
+.fromTo(".scene6-escalier4",{}, {x:"100vw",ease: "power1.out", duration:2},15.9)
+.fromTo(".scene6-escalier5",{}, {x:"100vw",ease: "power1.out", duration:2},16.2)
+.fromTo(".scene6-escalier6",{}, {x:"100vw",ease: "power1.out", duration:2},16.5)
+.fromTo(".scene6", {}, {y:"-200vh",ease: "none", duration:2},17)
+.fromTo(".scene6-fin", {}, {y:"-200vh",ease: "power1.out", duration:3},17)
+.fromTo(".fin", {opacity:0}, {opacity:1, duration:2})
  
     
 
