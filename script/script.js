@@ -45,7 +45,6 @@ const tlChap6 = gsap.timeline({
     }
 });
 
-
 //Sprites
 let timer;
 
@@ -84,10 +83,7 @@ section.forEach(function(monTitre) {
     .fromTo(h3, {opacity:0, x:"-3vw"},{opacity:1, x: 0, ease:"power1.inOut", duration:1.5},0.5)
 })
 
-
-
 //CHAPITRE 1
-
 //parallax
 tlChap1
 .to(".scene1-parallax1", { backgroundPosition: "100% 0", ease: "none",duration:22, repeat: -1},0)
@@ -158,7 +154,6 @@ tlChap3
 .fromTo(".scene3-cristal-7",{y:"-20vh"},{y:"110vh", duration:1.5},9)
 
 //CHAPITRE 4
-
 tlChap4
 .fromTo('.sur-nuage-3', {y:"15vh"},{y: "18vh", ease:"power1.inOut", yoyo:true, repeat:-1, duration:0.5})
 .fromTo(".sur-nuage-3",{x:"-100vw"}, {x:"100vw", ease:"power1.inOut",duration:7},1)
@@ -175,30 +170,27 @@ tlChap4
 .fromTo(".scene4-kiwi",{y:"-400vh"}, {y:"-560vh", ease:"none", duration:3},16)
 
 //CHAPITRE 5
-
 tlChap5
 .fromTo(".scene5-titre", {opacity:1}, {opacity:1, duration:2},0)
 .fromTo(".scene5-titre", {opacity:1}, {opacity:0, duration:4},3)
 .fromTo('.sur-nuage-4', {y:"0vh"},{y: "3vh", ease:"power1.inOut", yoyo:true, repeat:-1, duration:0.5}, 0)
 .fromTo('.sur-nuage-4', {x:"-100vw"},{x: "0vw", ease:"power1.inOut", duration:4}, 3)
 .fromTo(".scene5-texte1", {opacity:0}, {opacity:1, duration:2})
-
 .fromTo('.sur-nuage-4', {},{x: "30vw", ease:"power1.inOut", duration:4})
 .fromTo(".scene5-texte2", {opacity:0}, {opacity:1, duration:2})
-
 .fromTo('.sur-nuage-4', {},{x: "100vw", ease:"power1.inOut", duration:4})
 .fromTo(".scene5-texte3", {opacity:0}, {opacity:1, duration:2},15)
-
 .fromTo(".scene5-texte4", {opacity:0}, {opacity:1, duration:2},19)
 .fromTo('.sprite2', {opacity:0},{opacity:1, duration:4})
 .fromTo(".scene5-texte1", {}, {opacity:0, duration:2},10)
 .fromTo(".scene5-texte2", {}, {opacity:0, duration:2},14)
 .fromTo(".scene5-texte3", {}, {opacity:0, duration:2},19)
-//CHAPITRE 6
 
+//CHAPITRE 6
 tlChap6
 .fromTo(".scene6-titre", {y:0}, {y:"-100vh",ease: "none", duration:2},2)
 .fromTo(".scene6", {y:0}, {y:"-100vh",ease: "none", duration:2},2)
+//escaliers apparait
 .fromTo(".scene6-escalier1",{x:"100vw"}, {x:"0",ease: "power1.out", duration:2},3)
 .fromTo(".scene6-escalier2",{x:"100vw"}, {x:"0",ease: "power1.out", duration:2},3.3)
 .fromTo(".scene6-escalier3",{x:"100vw"}, {x:"0",ease: "power1.out", duration:2},3.6)
@@ -218,6 +210,7 @@ tlChap6
 .fromTo(".scene6-texte4", {}, {opacity:0, duration:1})
 .fromTo(".scene6-lilo-droite", {rotation:0}, {rotation:-35, ease:"power1.out", duration:1},13.5)
 .fromTo(".scene6-lilo-droite", {x:0, y:0}, {x:"100vw", y:"-75vh",ease:"power1.inOut", duration:6},14)
+//escaliers disparaits
 .fromTo(".scene6-escalier1",{}, {x:"100vw",ease: "power1.out", duration:2},17)
 .fromTo(".scene6-escalier2",{}, {x:"100vw",ease: "power1.out", duration:2},17.3)
 .fromTo(".scene6-escalier3",{}, {x:"100vw",ease: "power1.out", duration:2},17.6)
@@ -227,11 +220,3 @@ tlChap6
 .fromTo(".scene6", {}, {y:"-200vh",ease: "none", duration:2},19)
 .fromTo(".scene6-fin", {}, {y:"-200vh",ease: "power1.out", duration:3},19)
 .fromTo(".fin", {opacity:0}, {opacity:1, duration:2})
- 
-    
-
-    /*gsap.timeline()
-    .fromTo(h2, {opacity:0, y:0},{opacity:1, y: "-3vh", ease:"power1.inOut", duration:1})
-    .fromTo(h3, {opacity:0, x:"-3vw"},{opacity:1, x: 0, ease:"power1.inOut", duration:1.5},0.5)*/
-
-//Chapitre 6
