@@ -256,6 +256,7 @@ section{
 
 .scene1-texte2{
     top: 35vh;
+    width: 45vw;
     font-size: 3vw;
     color: var(--orangelilo);
     left: 10vw;
@@ -357,6 +358,7 @@ section{
 
 .scene2-texte1{
     position: absolute;
+    width: 40vw;
     font-size: 2.5vw;
     color: var(--rosemitaine);
     top: 100vh;
@@ -367,6 +369,7 @@ section{
 .scene2-texte2{
     top: 100vh;
     position: absolute;
+    width: 40vw;
     font-size: 2.5vw;
     color: var(--orangelilo);
     left: 55vw;
@@ -688,7 +691,7 @@ section{
     font-size: 5vw;
     color: var(--orangelilo);
     top: 40vh;
-    left: 45vw;
+    left: 39vw;
     z-index: 96;
 }
 /*---------Chapitre 6--------*/
