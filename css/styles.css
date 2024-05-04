@@ -386,6 +386,24 @@ section{
     z-index: 1;
 }
 
+.file-peche{
+    width: 80vw;
+    height: 300vh;
+    z-index: 100;
+    position: absolute;
+    top: -70vh;
+    left: 2vw;
+}
+
+.file-peche #template {
+    stroke: #c4c86d;
+  }
+
+ .file-peche #path {
+    opacity: 0;
+    stroke: #c7b299;
+  }
+
 /*---------Chapitre 3--------*/
 
 #chapitre3{

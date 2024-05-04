@@ -123,10 +123,12 @@ tlChap1
 //
 /**/
 
-
+//.file-peche
 
 
 //CHAPITRE 2
+
+
 tlChap2
 .fromTo(".scene2-lilo-tombe", {y:0, opacity:1, rotation:0},{y:"60vh", opacity:0, rotation:360, ease:"power1-out", duration:3})
 .fromTo(".scene2-titre",{y:0}, {y:"-100vh", ease:"none", duration:3},2.5)
@@ -137,6 +139,7 @@ tlChap2
 .fromTo(".scene2-texte2", {y:"100vh"}, {y:"-150vh",ease:"none", duration:9},6)
 .fromTo(".scene2-texte3", {y:"100vh"}, {y:"-160vh",ease:"none", duration:12},7)
 .fromTo(".sur-nuage-1",{y:"-61vh", opacity:1}, {y:"-210vh", ease:"back.Out", opacity:0, duration:4},13.5)
+.fromTo(".file-peche",{}, {y:"-210vh", ease:"none", duration:4},13.5)
 .fromTo(".scene2",{}, {y:"-300vh", ease:"none", duration:5}, 13.5)
 .fromTo(".scene2-poisson1",{y:"-100vh"},{y:"-300vh",ease:"none", duration:5}, 13.5)
 .fromTo(".scene2-poisson1",{opacity:0, x:0},{x:"20vh", opacity:1, ease:"power1.Out", duration:2}, 18.8)
