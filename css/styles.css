@@ -583,7 +583,7 @@ section{
 .scene4-texte10{
     z-index:1;
     top: 30vh;
-    font-size: 3vw;
+    font-size: 4vw;
     color: var(--orangelilo);
     left: 10vw;
 }
@@ -593,7 +593,7 @@ section{
 .scene4-texte7,
 .scene4-texte11{
     top: 50vh;
-    font-size: 3vw;
+    font-size: 4vw;
     color: var(--rosemitaine);
     left: 20vw;
 }
@@ -693,6 +693,12 @@ section{
     top: 40vh;
     left: 39vw;
     z-index: 96;
+}
+
+.cls-1{
+    position: absolute;
+    transform: translate(-0.3vw,15vh);
+    z-index: 100;
 }
 /*---------Chapitre 6--------*/
 
@@ -868,7 +874,8 @@ body.is-scrolling .sprite2{
 .sprite1{
     z-index: 1;
     position: absolute;
-    left: 30vw;
+    top: 10vh;
+    left: 35vw;
     background-image: url(../img/img_personnages/kiwi/spritesheet_kiwi.png);
     width: 30vw;
     aspect-ratio: 1/1;
