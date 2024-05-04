@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="file_peche" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 326.51 782.15">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #c7b299;
+      }
+
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        stroke: #c4c86d;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="m138.51,152s-76,12-61,112-22,106-50,135c-38.86,40.25-36,111,10,143,81.47,56.68,225,26,220,139s-115,100-115,100"/>
+  <path class="cls-2" d="m138.6,152.19s-76,12-61,112-22,106-50,135c-38.86,40.25-36,111,10,143,81.47,56.68,225,26,220,139s-115,100-115,100"/>
+</svg>

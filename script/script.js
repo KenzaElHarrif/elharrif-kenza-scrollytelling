@@ -192,6 +192,7 @@ tlChap4
 .fromTo(".scene4-noir",{y:"-400vh"}, {y:"-600vh", ease:"none", duration:3},16)
 .fromTo(".scene4-transition2",{y:"-400vh"}, {y:"-600vh", ease:"none", duration:3},16)
 .fromTo(".scene4-kiwi",{y:"-400vh"}, {y:"-600vh", ease:"none", duration:3},16)
+.fromTo(".sprite1", {scale:0},{scale:1})
 //le scroll ne fonctionne pas avec ceux-ci
 //.fromTo('.sur-nuage-3', {y:"15vh"},{y: "18vh", ease:"power1.inOut", yoyo:true, repeat:-1, duration:0.5})
 
