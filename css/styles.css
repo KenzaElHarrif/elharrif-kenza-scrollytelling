@@ -66,6 +66,7 @@ h1{
 }
 
 .presentation{
+    padding: 30px;
     position: absolute;
     width: 98vw;
     bottom: 18vh;
@@ -154,7 +155,6 @@ h3{
 
 section{
     position: relative;
-    border: 1px solid rgba(218, 0, 0, 0.5);
 }
 
 #chapitre1{
@@ -165,16 +165,6 @@ section{
 }
 
 .scene1-lilo-triste-1{
-    width: 30vw;
-    height: auto;
-    position: absolute;
-    left: 25vw;
-    object-fit:cover;
-    z-index: 101;
-}
-
-.scene1-lilo-triste-2{
-    display: none;
     width: 30vw;
     height: auto;
     position: absolute;
@@ -386,7 +376,6 @@ section{
 }
 
 .file-peche{
-    border: 1px solid green; 
     width: 80vw;
     height: 300vh;
     z-index: 9;
@@ -874,10 +863,6 @@ section{
     fill: var(--orange);
  }
 
-
-
-img { border: 1px solid green; }
-
 /*----------ANIMATIONS SPRITESHEET------------*/
 
 .size{
@@ -936,6 +921,7 @@ body.is-scrolling .sprite2{
 
 /*---------FOOTER--------*/
 footer{
+    padding: 35px;
     text-align: center;
     color: var(--gris);
 }

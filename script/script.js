@@ -7,7 +7,6 @@ const tlChap1 = gsap.timeline({
     scrollTrigger:{
         trigger:"#chapitre1",
         pin:true,
-        markers:true,
         scrub:true,
         start:"top top",
         end:"+=2000"
@@ -17,7 +16,6 @@ const tlChap2 = gsap.timeline({
     scrollTrigger:{
         trigger:"#chapitre2",
         pin:true,
-        markers:true,
         scrub:true,
         start:"top top",
         end:"+=5000"
@@ -27,7 +25,6 @@ const tlChap3 = gsap.timeline({
     scrollTrigger:{
         trigger:"#chapitre3",
         pin:true,
-        markers:true,
         scrub:true,
         start:"top top",
         end:"+=5000"
@@ -37,7 +34,6 @@ const tlChap4 = gsap.timeline({
     scrollTrigger:{
         trigger:"#chapitre4",
         pin:true,
-        markers:true,
         scrub:true,
         start:"top top",
         end:"+=5000"
@@ -48,7 +44,6 @@ const tlChap5 = gsap.timeline({
     scrollTrigger:{
         trigger:"#chapitre5",
         pin:true,
-        markers:true,
         scrub:true,
         start:"top top",
         end:"+=5000"
@@ -59,7 +54,6 @@ const tlChap6 = gsap.timeline({
     scrollTrigger:{
         trigger:"#chapitre6",
         pin:true,
-        markers:true,
         scrub:true,
         start:"top top",
         end:"+=5000"
@@ -93,7 +87,6 @@ section.forEach(function(monTitre) {
     
     gsap.timeline({
       scrollTrigger:{
-        markers:true,
         start:"top 50%",
         end:"bottom",
         trigger: monTitre,
@@ -108,7 +101,7 @@ section.forEach(function(monTitre) {
 //CHAPITRE 1
 gsap.timeline()
 
-.fromTo('.scene1-lilo-triste-1', {y:"50vh"},{y: "51vh", ease:"power1.inOut", yoyo:true, repeat:-1, duration:0.5},0.5)
+.fromTo('.scene1-lilo-triste-1', {bottom:"0vh"},{bottom: "1vh", ease:"power1.inOut", yoyo:true, repeat:-1, duration:0.5},0.5)
 //parallax
 tlChap1
 .fromTo(".scene1-titre", {opacity:1}, {opacity:0, duration:1},5)
@@ -128,7 +121,6 @@ gsap.set("#path",{drawSVG:"0% 0%"});
 gsap.to("#path",{
     scrollTrigger:{
         trigger:".scene2-poisson4",
-        markers:true,
         scrub:true,
         start:"top top",
         end:"+=2000"
@@ -140,7 +132,6 @@ gsap.to("#path",{
 gsap.fromTo(".scene2-lilo-tombe", {y:0, opacity:1, rotation:0},{
     scrollTrigger:{
         trigger:"#chapitre2",
-        markers: true,
         start: "top top",
         toggleActions: "play complete reverse reset"
     },
@@ -204,34 +195,34 @@ tlChap4
 //texte
 .fromTo(".scene4-texte",{y:"100vh"}, {y:"-20vh", ease:"none", duration:3},4.5)
 .fromTo(".scene4-texte1", {opacity:0, scale:0},{opacity:1,scale:1, ease:"power1.inOut"}, 12.9)
-.fromTo(".scene4-texte1", {},{opacity:0}, 13.9)
+.fromTo(".scene4-texte1", {},{opacity:0}, 15)
 .fromTo(".scene4-texte2", {opacity:0,scale:0},{opacity:1,scale:1, ease:"power1.inOut"}, 13.5)
-.fromTo(".scene4-texte2", {},{opacity:0}, 14.5)
-.fromTo(".scene4-texte3", {opacity:0,scale:0},{opacity:1,scale:1, ease:"power1.inOut"}, 15)
-.fromTo(".scene4-texte3", {},{opacity:0}, 16)
-.fromTo(".scene4-texte4", {opacity:0,scale:0},{opacity:1,scale:1, ease:"power1.inOut"}, 16.5)
-.fromTo(".scene4-texte4", {},{opacity:0}, 17.5)
-.fromTo(".scene4-texte5", {opacity:0, scale:0},{opacity:1, scale:3,ease:"power1.inOut",duration:1}, 18.5)
-.fromTo(".scene4-texte5", {rotation:0},{rotation:5, yoyo:true, repeat:3, ease:"power1.inOut"}, 18.5)
-.fromTo(".scene4-texte5", {},{opacity:0, duration:2}, 19.5)
-.fromTo(".scene4-texte6", {opacity:0, scale:0},{opacity:1,scale:1, ease:"power1.inOut"}, 20.5)
-.fromTo(".scene4-texte6", {},{opacity:0}, 21.5)
-.fromTo(".scene4-texte7", {opacity:0, scale:0},{opacity:1,scale:1, ease:"power1.inOut"}, 22)
-.fromTo(".scene4-texte7", {},{opacity:0}, 23)
-.fromTo(".scene4-texte8", {opacity:0, scale:0},{opacity:1,scale:1, ease:"power1.inOut"}, 23.5)
-.fromTo(".scene4-texte8", {},{opacity:0}, 24.5)
-.fromTo(".scene4-texte9", {opacity:0, scale:0, x:0},{opacity:1, scale:3,x:"-50vw",ease:"power1.inOut",duration:1}, 25.5)
-.fromTo(".scene4-texte9", {rotation:0},{rotation:5, yoyo:true, repeat:3, ease:"power1.inOut"}, 25.5)
-.fromTo(".scene4-texte9", {},{opacity:0}, 26.5)
-.fromTo(".scene4-texte10", {x:0, scale:1},{scale:5,x:"-300vw",ease:"power1.inOut",duration:2}, 27)
-.fromTo(".scene4-texte10", {rotation:0},{rotation:5, yoyo:true, repeat:3, ease:"power1.inOut"}, 27)
-.fromTo(".scene4-texte10", {},{opacity:0}, 28)
-.fromTo(".scene4-texte11", {x:0,scale:1},{scale:5, x:"-300vw",ease:"power1.inOut",duration:2}, 27.5)
-.fromTo(".scene4-texte11", {rotation:0},{rotation:5, yoyo:true, repeat:3, ease:"power1.inOut"}, 27.5)
-.fromTo(".scene4-texte11", {},{opacity:0}, 28.5)
-.fromTo(".scene4-noir",{y:"-400vh"}, {y:"-600vh", ease:"none", duration:3},29)
-.fromTo(".scene4-transition2",{y:"-400vh"}, {y:"-600vh", ease:"none", duration:3},29)
-.fromTo(".scene4-kiwi",{y:"-400vh"}, {y:"-600vh", ease:"none", duration:3},29)
+.fromTo(".scene4-texte2", {},{opacity:0}, 16)
+.fromTo(".scene4-texte3", {opacity:0,scale:0},{opacity:1,scale:1, ease:"power1.inOut"}, 15.5)
+.fromTo(".scene4-texte3", {},{opacity:0}, 18.5)
+.fromTo(".scene4-texte4", {opacity:0,scale:0},{opacity:1,scale:1, ease:"power1.inOut"}, 17.5)
+.fromTo(".scene4-texte4", {},{opacity:0}, 20.5)
+.fromTo(".scene4-texte5", {opacity:0, scale:0},{opacity:1, scale:3,ease:"power1.inOut",duration:1}, 20.5)
+.fromTo(".scene4-texte5", {rotation:0},{rotation:5, yoyo:true, repeat:3, ease:"power1.inOut"}, 20.5)
+.fromTo(".scene4-texte5", {},{opacity:0, duration:2}, 21.5)
+.fromTo(".scene4-texte6", {opacity:0, scale:0},{opacity:1,scale:1, ease:"power1.inOut"}, 22.5)
+.fromTo(".scene4-texte6", {},{opacity:0}, 25.5)
+.fromTo(".scene4-texte7", {opacity:0, scale:0},{opacity:1,scale:1, ease:"power1.inOut"}, 24)
+.fromTo(".scene4-texte7", {},{opacity:0}, 27)
+.fromTo(".scene4-texte8", {opacity:0, scale:0},{opacity:1,scale:1, ease:"power1.inOut"}, 26.5)
+.fromTo(".scene4-texte8", {},{opacity:0}, 29)
+.fromTo(".scene4-texte9", {opacity:0, scale:0, x:0},{opacity:1, scale:3,x:"-50vw",ease:"power1.inOut",duration:1}, 28.5)
+.fromTo(".scene4-texte9", {rotation:0},{rotation:5, yoyo:true, repeat:3, ease:"power1.inOut"}, 29)
+.fromTo(".scene4-texte9", {},{opacity:0}, 29.9)
+.fromTo(".scene4-texte10", {x:0, scale:1},{scale:5,x:"-300vw",ease:"power1.inOut",duration:2}, 30)
+.fromTo(".scene4-texte10", {rotation:0},{rotation:5, yoyo:true, repeat:3, ease:"power1.inOut"}, 30)
+.fromTo(".scene4-texte10", {},{opacity:0}, 31.2)
+.fromTo(".scene4-texte11", {x:0,scale:1},{scale:5, x:"-300vw",ease:"power1.inOut",duration:2}, 30.5)
+.fromTo(".scene4-texte11", {rotation:0},{rotation:5, yoyo:true, repeat:3, ease:"power1.inOut"}, 30.5)
+.fromTo(".scene4-texte11", {},{opacity:0}, 31.5)
+.fromTo(".scene4-noir",{y:"-400vh"}, {y:"-600vh", ease:"none", duration:3},34)
+.fromTo(".scene4-transition2",{y:"-400vh"}, {y:"-600vh", ease:"none", duration:3},34)
+.fromTo(".scene4-kiwi",{y:"-400vh"}, {y:"-600vh", ease:"none", duration:3},34)
 .fromTo(".sprite1", {scale:0},{scale:1, duration:2})
 
 //CHAPITRE 5
