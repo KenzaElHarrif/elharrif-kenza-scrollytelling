@@ -1,4 +1,7 @@
 gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(DrawSVGPlugin);
+gsap.registerPlugin(MotionPathPlugin);
+gsap.registerPlugin(MorphSVGPlugin);
 
 const tlChap1 = gsap.timeline({
     scrollTrigger:{
@@ -105,7 +108,7 @@ section.forEach(function(monTitre) {
 //CHAPITRE 1
 gsap.timeline()
 
-.fromTo('.scene1-lilo-triste-1', {y:"60vh"},{y: "61vh", ease:"power1.inOut", yoyo:true, repeat:-1, duration:0.5},0.5)
+.fromTo('.scene1-lilo-triste-1', {y:"50vh"},{y: "51vh", ease:"power1.inOut", yoyo:true, repeat:-1, duration:0.5},0.5)
 //parallax
 tlChap1
 .fromTo(".scene1-titre", {opacity:1}, {opacity:0, duration:1},5)
@@ -119,18 +122,31 @@ tlChap1
 .fromTo('.scene1-lilo-triste-1', {rotate:0},{rotate:25, ease:"power1.Out", duration:0.7,}, 14.5)
 .fromTo('.scene1-lilo-triste-1', {opacity:1},{opacity:0, ease:"power2.inOut", duration:0.5}, 14.7)
 
-//le scroll ne fonctionne pas avec ceux-ci
-//
-/**/
-
-//.file-peche
-
-
 //CHAPITRE 2
 
+gsap.set("#path",{drawSVG:"0% 0%"});
+gsap.to("#path",{
+    scrollTrigger:{
+        trigger:".scene2-poisson4",
+        markers:true,
+        scrub:true,
+        start:"top top",
+        end:"+=2000"
+    },
+    drawSVG:"100% 0%",
+    duration:7,
+    ease:"power1.inOut"})
+
+gsap.fromTo(".scene2-lilo-tombe", {y:0, opacity:1, rotation:0},{
+    scrollTrigger:{
+        trigger:"#chapitre2",
+        markers: true,
+        start: "top top",
+        toggleActions: "play complete reverse reset"
+    },
+    y:"60vh", opacity:0, rotation:360, ease:"power1-out", duration:3.5})
 
 tlChap2
-.fromTo(".scene2-lilo-tombe", {y:0, opacity:1, rotation:0},{y:"60vh", opacity:0, rotation:360, ease:"power1-out", duration:3})
 .fromTo(".scene2-titre",{y:0}, {y:"-100vh", ease:"none", duration:3},2.5)
 .fromTo(".scene2",{y:"0"}, {y:"-100vh", ease:"none", duration:3},2.5)
 .fromTo(".sur-nuage-1",{y:"150vh"}, {y:"150vh", ease:"none", duration:3},0)
@@ -139,7 +155,7 @@ tlChap2
 .fromTo(".scene2-texte2", {y:"100vh"}, {y:"-150vh",ease:"none", duration:9},6)
 .fromTo(".scene2-texte3", {y:"100vh"}, {y:"-160vh",ease:"none", duration:12},7)
 .fromTo(".sur-nuage-1",{y:"-61vh", opacity:1}, {y:"-210vh", ease:"back.Out", opacity:0, duration:4},13.5)
-.fromTo(".file-peche",{}, {y:"-210vh", ease:"none", duration:4},13.5)
+.fromTo(".file-peche",{}, {y:"-210vh", ease:"none", duration:3.5},13.5)
 .fromTo(".scene2",{}, {y:"-300vh", ease:"none", duration:5}, 13.5)
 .fromTo(".scene2-poisson1",{y:"-100vh"},{y:"-300vh",ease:"none", duration:5}, 13.5)
 .fromTo(".scene2-poisson1",{opacity:0, x:0},{x:"20vh", opacity:1, ease:"power1.Out", duration:2}, 18.8)
@@ -150,8 +166,6 @@ tlChap2
 .fromTo(".scene2-poisson4",{y:"-100vh"},{y:"-300vh",ease:"none", duration:5}, 10.5)
 .fromTo(".scene2-poisson4",{opacity:0, x:0},{x:"-20vh", opacity:1, ease:"power1.Out", duration:2}, 19.8)
 
-//le scroll ne fonctionne pas avec ceux-ci
-//.fromTo('.sur-nuage-1', {y:"-60vh"},{y: "-61vh", ease:"power1.inOut", yoyo:true, repeat:-1, duration:0.5})
 
 //CHAPITRE 3
 tlChap3
@@ -177,9 +191,6 @@ tlChap3
 .fromTo(".scene3-cristal-5",{y:"-20vh"},{y:"110vh", duration:1.5},6.5)
 .fromTo(".scene3-cristal-6",{y:"-20vh"},{y:"110vh", duration:1.5},8.5)
 .fromTo(".scene3-cristal-7",{y:"-20vh"},{y:"110vh", duration:1.5},9)
-
-//le scroll ne fonctionne pas avec ceux-ci
-//.fromTo('.sur-nuage-2', {y:"-115vh"},{y: "-113vh", ease:"power1.inOut", yoyo:true, repeat:-1, duration:0.5}, 3)
 
 //CHAPITRE 4
 tlChap4
@@ -222,22 +233,26 @@ tlChap4
 .fromTo(".scene4-transition2",{y:"-400vh"}, {y:"-600vh", ease:"none", duration:3},29)
 .fromTo(".scene4-kiwi",{y:"-400vh"}, {y:"-600vh", ease:"none", duration:3},29)
 .fromTo(".sprite1", {scale:0},{scale:1, duration:2})
-//le scroll ne fonctionne pas avec ceux-ci
-//.fromTo('.sur-nuage-3', {y:"15vh"},{y: "18vh", ease:"power1.inOut", yoyo:true, repeat:-1, duration:0.5})
 
 //CHAPITRE 5
+
 tlChap5
 .fromTo(".scene5-titre", {opacity:1}, {opacity:1, duration:2},0)
 .fromTo(".scene5-titre", {opacity:1}, {opacity:0, duration:4},3)
-//.fromTo('.sur-nuage-4', {y:"0vh"},{y: "3vh", ease:"power1.inOut", yoyo:true, repeat:-1, duration:0.5}, 0)
-.fromTo('.sur-nuage-4', {x:"-100vw"},{x: "0vw", ease:"power1.inOut", duration:4}, 3)
-.fromTo(".scene5-texte1", {opacity:0}, {opacity:1, duration:2})
-.fromTo('.sur-nuage-4', {},{x: "30vw", ease:"power1.inOut", duration:4})
-.fromTo(".scene5-texte2", {opacity:0}, {opacity:1, duration:2})
-.fromTo('.sur-nuage-4', {},{x: "100vw", ease:"power1.inOut", duration:4})
+.fromTo(".sur-nuage-4", {opacity:0}, {opacity:1, duration:2},5)
+.to(".sur-nuage-4", {
+    motionPath: {
+        align: '#courbe',
+        path: '#courbe',
+        alignOrigin: [0.5, 0.5]
+    },
+    duration: 20}, 5)
+.fromTo(".sur-nuage-4", {}, {opacity:0, duration:2},17.5)
+.fromTo(".scene5-texte1", {opacity:0}, {opacity:1, duration:2},6.5)
+.fromTo(".scene5-texte2", {opacity:0}, {opacity:1, duration:2},9)
 .fromTo(".scene5-texte3", {opacity:0}, {opacity:1, duration:2},15)
 .fromTo(".scene5-texte4", {opacity:0}, {opacity:1, duration:2},19)
-.fromTo('.sprite2', {opacity:0},{opacity:1, duration:4})
+.fromTo('.sprite2', {opacity:0},{opacity:1, duration:4},19)
 .fromTo(".scene5-texte1", {}, {opacity:0, duration:2},10)
 .fromTo(".scene5-texte2", {}, {opacity:0, duration:2},14)
 .fromTo(".scene5-texte3", {}, {opacity:0, duration:2},19)
@@ -275,4 +290,7 @@ tlChap6
 .fromTo(".scene6-escalier6",{}, {x:"100vw",ease: "power1.out", duration:2},18.5)
 .fromTo(".scene6", {}, {y:"-200vh",ease: "none", duration:2},19)
 .fromTo(".scene6-fin", {}, {y:"-200vh",ease: "power1.out", duration:3},19)
+.to("#patte", {
+    morphSVG: "#coeur"
+})
 .fromTo(".fin", {opacity:0}, {opacity:1, duration:2})

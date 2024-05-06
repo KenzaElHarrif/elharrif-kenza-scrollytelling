@@ -27,7 +27,7 @@
                 <li>translation x et y</li>
                 <li>parallax (background-position)</li>
                 <li>opacité</li>
-                <li>rotation</li> 
+                <li>rotation</li>
                 <li>scrollTrigger 
                     <ul> 
                         <li>trigger= #chapitre1</li> 
@@ -54,7 +54,8 @@
                 <li>Foreach pour h2 et h3 (scrub)</li>
                 <li>timeline</li> 
                 <li>translations x et y</li> 
-                <li>opacité</li> 
+                <li>opacité</li>
+                <li>DrawSVG</li>
                 <li>scrollTrigger 
                     <ul> 
                         <li>trigger= #chapitre2</li> 
@@ -72,8 +73,8 @@
                     }
                   </style>
                 </defs>
-                <path id="template" class="cls-1" d="m138.51,152s-76,12-61,112-22,106-50,135c-38.86,40.25-36,111,10,143,81.47,56.68,225,26,220,139s-115,100-115,100"/>
-                <path id="path" class="cls-1" d="m138.6,152.19s-76,12-61,112-22,106-50,135c-38.86,40.25-36,111,10,143,81.47,56.68,225,26,220,139s-115,100-115,100"/>
+                <path id="path" class="cls-1" d="m138.51,152s-76,12-61,112-22,106-50,135c-38.86,40.25-36,111,10,143,81.47,56.68,225,26,220,139s-115,100-115,100"/>
+                <path id="template" class="cls-1" d="m138.6,152.19s-76,12-61,112-22,106-50,135c-38.86,40.25-36,111,10,143,81.47,56.68,225,26,220,139s-115,100-115,100"/>
               </svg>
             <p class="scene2-texte1"> MAIS ! Tu es tombé sur mon nuage ! Qui es-tu ?</p>
                 <p class="scene2-texte2"> Désolé ! Je suis Lilo et je cherche ma maman. Pourrais-tu m'aider à remonter en haut?</p>
@@ -100,7 +101,7 @@
                 <li>timeline</li> 
                 <li>translation x et y</li> 
                 <li>opacité</li> 
-                <li>rotation</li> 
+                <li>rotation</li>
                 <li>scrollTrigger 
                     <ul> 
                         <li>trigger= #chapitre3</li> 
@@ -134,6 +135,8 @@
                 <li>timeline</li> 
                 <li>translation x et y</li>
                 <li>spritesheet</li>
+                <li>scale</li>
+                <li>opacité</li>
                 <li>scrollTrigger 
                     <ul> 
                         <li>trigger= #chapitre4</li> 
@@ -177,6 +180,7 @@
                 <li>translation x et y</li>
                 <li>spritesheet</li>
                 <li>opacité</li>
+                <li>MotionPathSVG</li>
                 <li>scrollTrigger 
                     <ul> 
                         <li>trigger= #chapitre5</li> 
@@ -184,26 +188,31 @@
                     </ul> 
                 </li> 
             </ul>
-            <svg xmlns="http://www.w3.org/2000/svg" id="Calque_2" data-name="Calque 2" viewBox="0 0 750.01 399.39">
-                <defs>
-                  <style>
-                    .cls-1 {
-                      fill: none;
-                      stroke: #c7b299;
-                      stroke-miterlimit: 10;
-                    }
-                  </style>
-                </defs>
-                <path class="cls-1" d="m36.51,186.89s27-4,61.94-12.27c62.79-14.86,82.06-35.73,139.06-60.73s128.77-.78,161,21c37,25,65,29,95,2,29.21-26.29,75.49-98.78,127-76,104,46-18,189-84,91C470.51,53.89,621.66,8.19,644.51,4.89c90-13,105,7,105,7v386.94l-749,.06,4-207,32-5Z"/>
-              </svg>
-            <div class="sur-nuage-4">
-                <img class="scene5-nuage" src="./img/img_elements_visuels/nuage.png" alt="">
-                <img class="scene5-lilo-mimi" src="./img/img_personnages/lilo_et_mimi/Lilo_Mimi_sur_dos.png" alt="">
-            </div>  
+             
             <div class="sprite2"></div>
             <div class="scene5-titre">
                 <h2>Chapitre 5</h2>
                 <h3>À l'approche de la fin</h3>
+            </div>
+            
+            <div class="lilo-path">
+            <div class="sur-nuage-4">
+                <img class="scene5-nuage" src="./img/img_elements_visuels/nuage.png" alt="">
+                <img class="scene5-lilo-mimi" src="./img/img_personnages/lilo_et_mimi/Lilo_Mimi_sur_dos.png" alt="">
+            </div> 
+            <svg xmlns="http://www.w3.org/2000/svg" id="lilo-path-calque" viewBox="0 0 1982.63 485.21" preserveAspectRatio="xMinYMin slice">
+                <defs>
+                  <style>
+                    .calque {
+                        z-index: 100;
+                      fill: none;
+                      stroke: none;
+                      stroke-miterlimit: 10;
+                    }
+                  </style>
+                </defs>
+                <path id="courbe" class="calque" d="m.13,484.72s255.76-69.18,358-89c144.43-28,649.74,61.03,745-16,107.3-86.76,127.27-168.17,122-224-10-106-169.29-189.73-275-141-141,65-239,406,27,378s302-301,470-286,214,131,371,162,164-19,164-19"/>
+              </svg>
             </div>
             <p class="scene5-texte1"> Ouf ! On a eu chaud !</p>
             <p class="scene5-texte2"> J'ai trouvé ça plutôt amusant!</p>
@@ -211,7 +220,6 @@
             <div class="scene5"></div>
             <p class="scene5-texte4"> Oh... Déjà?</p>
             <div class="scene5-fond-blanc"></div>
-
             
         </section>
         <section id="chapitre6">
@@ -220,7 +228,8 @@
                 <li>timeline</li> 
                 <li>translation x et y</li>
                 <li>rotation</li>
-                <li>opacité</li> 
+                <li>opacité</li>
+                <li>MorphSVG</li>
                 <li>scrollTrigger 
                     <ul> 
                         <li>trigger= #chapitre6</li> 
@@ -248,17 +257,27 @@
             </div>
             <img class="scene6" src="./img/img_arriere_plan/scene6_elements/scene6_fond.jpg" alt="">
             <div class="scene6-fin">
-                <svg id="Calque_4" data-name="Calque 4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 472.75 473.39">
-                    <path class="cls-1" d="M240.83,218.27c68.87-4.22,150,81,165,160s-1,87-25,94-77-21-105-26-62-11-113,14-99,12-98-35,36.36-127,71.68-160,55.32-44,104.32-47Z"/>
-                    <path class="cls-1" d="M368.83,207.27c-3.86,44.39,8.82,101.94,48,108s57.17-58.26,55.85-97.15c-1.39-40.96-8.85-96.85-48.85-96.85-33,0-53,63-55,86Z"/>
-                    <path class="cls-1" d="M253.02,86.16c-3.86,44.39,8.82,101.94,48,108s57.17-58.26,55.85-97.15c-1.39-40.96-9.03-93.09-48.85-96.85s-53,63-55,86Z"/>
-                    <path class="cls-1" d="M121.4,93.58c-.93,44.54,15.51,101.14,55,104.61s53.22-61.9,49.34-100.61c-4.08-40.78-15.22-96.27-55.11-93.43-43.8,3.12-48.74,66.35-49.23,89.43Z"/>
-                    <path class="cls-1" d="M.04,207.29c-.93,44.54,15.51,101.14,55,104.61,39.49,3.47,53.22-61.9,49.34-100.61-4.08-40.78-15.22-96.27-55.11-93.43C5.47,120.98.52,184.21.04,207.29Z"/>
+                <svg class="patte-coeur" xmlns="http://www.w3.org/2000/svg" id="patte-coeur-morph" viewBox="0 0 472.83 495.49">
+                    <defs>
+                      <style>
+                        .calque-1 {
+                          stroke-width: 0px;
+                        }
+                      </style>
+                    </defs>
+                    <path id="coeur" class="calque-1" d="m88.71,316.79c-2-48.78,40.12-73.36,68.63-74.29,30.88-1.01,43.16,3.54,79.24,39.62,30.87-37.09,58.46-41.34,78.98-39.92,28.46,1.96,69.34,25.47,68.63,74.29-.71,48.82-98.34,129.47-147.87,179-59.43-54.48-145.75-133.01-147.61-178.7Z"/>
+                    <path id="patte" class="calque-1" d="m242.67,204.3c59.02-4.22,128.55,81.01,141.4,160.03,12.85,79.01-.86,87.02-21.42,94.02-20.57,7-65.99-21-89.98-26s-53.13-11-96.84,14c-43.71,25-84.84,12-83.99-35.01.86-47.01,31.16-127.02,61.43-160.03,30.27-33.01,47.41-44.01,89.4-47.01h0Z"/>
+                    
+                    <path  class="calque-1" d="m121.42,93.59c-.93,44.55,15.51,101.16,55.01,104.63s53.23-61.91,49.35-100.63c-4.08-40.79-15.22-96.29-55.12-93.45-43.81,3.12-48.75,66.36-49.24,89.45Z"/>
+                    
+                    <path class="calque-1" d="m368.89,207.3c-3.86,44.4,8.82,101.96,48.01,108.02,39.19,6.06,57.18-58.27,55.86-97.17-1.39-40.97-8.85-96.87-48.86-96.87-33.01,0-53.01,63.01-55.01,86.02h0Z"/>
+                    <path class="calque-1" d="m253.06,86.17c-3.86,44.4,8.82,101.96,48.01,108.02,39.19,6.06,57.18-58.27,55.86-97.17-1.39-40.97-9.03-93.11-48.86-96.87-39.83-3.76-53.01,63.01-55.01,86.02h0Z"/>
+                    <path  class="calque-1" d="m.04,207.32c-.93,44.55,15.51,101.16,55.01,104.63,39.5,3.47,53.23-61.91,49.35-100.63-4.08-40.79-15.22-96.29-55.12-93.45C5.47,120.99.52,184.24.04,207.32Z"/>
                   </svg>
-                <svg id="Calque_3" data-name="Calque 3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 417.75 358.32">
-                    <path class="cls-1" d="M.1,105.75C-2.72,36.8,56.81,2.06,97.1.75c43.64-1.43,61,5,112,56C252.73,4.32,291.73-1.68,320.73.32c40.22,2.77,98,36,97,105s-139,183-209,253C124.73,281.32,2.73,170.32.1,105.75Z"/>
-                </svg>
             </div>
+            
+            
+                
             <p class="fin">Fin</p>
         </section>
     </main>
@@ -272,5 +291,9 @@
 
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/MotionPathPlugin.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/DrawSVGPlugin3.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/MorphSVGPlugin3.min.js"></script>
     <script src="./script/script.js"></script>
 </html>

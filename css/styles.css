@@ -154,7 +154,7 @@ h3{
 
 section{
     position: relative;
-    border: 1px solid rgba(218, 0, 0, 0.5); 
+    /*border: 1px solid rgba(218, 0, 0, 0.5); */
 }
 
 #chapitre1{
@@ -162,7 +162,6 @@ section{
     height:100vh;
     background-color: var(--beige);
     overflow: hidden;
-    border-color: blueviolet;
 }
 
 .scene1-lilo-triste-1{
@@ -322,7 +321,7 @@ section{
     width: 35vw;
     height: 35vw;
     left: 33vw;
-    z-index: 1;
+    z-index: 100;
 }
 
 .scene2-poisson1{
@@ -383,25 +382,29 @@ section{
     font-size: 2.5vw;
     color: var(--rosemitaine);
     left: 10vw;
-    z-index: 1;
+    z-index: 99;
 }
 
 .file-peche{
     width: 80vw;
     height: 300vh;
-    z-index: 100;
+    z-index: 9;
     position: absolute;
-    top: -70vh;
-    left: 2vw;
+    top: -19vh;
+    left: 0vw;
 }
 
-.file-peche #template {
+.file-peche #path {
     stroke: #c4c86d;
+    fill: none;
+    stroke-dashoffset: 0.001;
+    stroke-dasharray: 0px, 999999px;
   }
 
- .file-peche #path {
-    opacity: 0;
-    stroke: #c7b299;
+ .file-peche #template {
+    fill: none;
+    stroke-width: 1px;
+    stroke: #44445500;
   }
 
 /*---------Chapitre 3--------*/
@@ -648,7 +651,6 @@ section{
 }
 
 .scene5{
-    
     z-index: 95;
     position: absolute;
     width: 100vw;
@@ -708,15 +710,16 @@ section{
 .scene5-texte4{
     font-size: 5vw;
     color: var(--orangelilo);
-    top: 40vh;
+    top: 25vh;
     left: 39vw;
     z-index: 96;
 }
 
-.cls-1{
-    position: absolute;
-    transform: translate(-0.3vw,15vh);
+.lilo-path{
     z-index: 100;
+    position: absolute;
+    width: 100vw;
+    bottom: 10vh;
 }
 /*---------Chapitre 6--------*/
 
@@ -813,22 +816,6 @@ section{
     left: 40vw;
 }
 
- #Calque_4{
-    fill: var(--orange);
-    position: absolute;
-    top: 10vh;
-    left: 40vw;
-    width: 20vw;
- }
-
- #Calque_3{
-    fill: var(--orange);
-    position: absolute;
-    top: 15vh;
-    left: 40vw;
-    width: 20vw;
- }
-
  .scene6-texte1{
     font-size: 2.5vw;
     color: var(--rosemitaine);
@@ -870,10 +857,25 @@ section{
     font-size: 10vw;
  }
 
+ #coeur{
+    fill: none;
+ }
+
+ .patte-coeur{
+    position: absolute;
+    left: 40vw;
+    top: 5vh;
+    width: 20vw;
+    z-index: 100;
+ }
+
+ .calque-1{
+    fill: var(--orange);
+ }
 
 
 
-img { border: 1px solid green; }
+/*img { border: 1px solid green; }*/
 
 /*----------ANIMATIONS SPRITESHEET------------*/
 
@@ -933,7 +935,6 @@ body.is-scrolling .sprite2{
 
 /*---------FOOTER--------*/
 footer{
-    height: 30vh;
     text-align: center;
     color: var(--gris);
 }
