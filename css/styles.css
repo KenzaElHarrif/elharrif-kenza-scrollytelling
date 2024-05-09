@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Gorditas:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Gorditas:wght@400;700&family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
-
 :root{
     --noir: black;
     --gris:#8C8C8C;
@@ -68,11 +65,12 @@ h1{
 .presentation{
     padding: 30px;
     position: absolute;
-    width: 98vw;
+    width: 70vw;
+    left: 15vw;
     bottom: 18vh;
     color: var(--gris);
     text-align: center;
-    font-size: 11px;
+    font-size: 1vw;
 }
 
 /*----------SECTION MAIN------------*/
@@ -160,7 +158,6 @@ section{
 #chapitre1{
     width: 100vw;
     height:100vh;
-    background-color: var(--beige);
     overflow: hidden;
 }
 
@@ -214,7 +211,6 @@ section{
 }
 
 .scene1-parallax4{
-    box-shadow: inset 0 4em 2em var(--beige);
     position: absolute;
     height: 100vh;
     width: 100vw;
@@ -385,7 +381,7 @@ section{
 }
 
 .file-peche #path {
-    stroke: #c4c86d;
+    stroke: var(--vertkiwi);
     fill: none;
     stroke-dashoffset: 0.001;
     stroke-dasharray: 0px, 999999px;
@@ -394,7 +390,7 @@ section{
  .file-peche #template {
     fill: none;
     stroke-width: 1px;
-    stroke: #44445500;
+    opacity: 0;
   }
 
 /*---------Chapitre 3--------*/
@@ -637,7 +633,7 @@ section{
     position: absolute;
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(180deg, var(--beige) 0%, var(--beigefonce) 100%);
+    background: var(--beige) 100%;
 }
 
 .scene5{
@@ -799,7 +795,6 @@ section{
 
 .scene6-lilo-droite{
     bottom: 0;
-    opacity: 0;
     z-index: 105;
     width: 35vw;
     position: absolute;
@@ -829,7 +824,6 @@ section{
 }
 
 .scene6-texte4{
-    opacity: 0;
     font-size: 2.5vw;
     color: var(--orangelilo);
     top: 20vh;
@@ -837,7 +831,6 @@ section{
 }
 
  .fin{
-    opacity: 0;
     z-index: 90;
     font-family: Gorditas;
     bottom: 20vh;
@@ -894,7 +887,6 @@ body.is-scrolling .sprite2{
 }
 
 .sprite2{
-    opacity: 0;
     z-index: 96;
     position: absolute;
     bottom: 0vh;

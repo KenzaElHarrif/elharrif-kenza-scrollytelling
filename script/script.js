@@ -18,7 +18,7 @@ const tlChap2 = gsap.timeline({
         pin:true,
         scrub:true,
         start:"top top",
-        end:"+=5000"
+        end:"+=3000"
     }
 });
 const tlChap3 = gsap.timeline({
@@ -27,7 +27,7 @@ const tlChap3 = gsap.timeline({
         pin:true,
         scrub:true,
         start:"top top",
-        end:"+=5000"
+        end:"+=4000"
     }
 });
 const tlChap4 = gsap.timeline({
@@ -36,7 +36,7 @@ const tlChap4 = gsap.timeline({
         pin:true,
         scrub:true,
         start:"top top",
-        end:"+=5000"
+        end:"+=3000"
     }
 });
 
@@ -46,7 +46,7 @@ const tlChap5 = gsap.timeline({
         pin:true,
         scrub:true,
         start:"top top",
-        end:"+=5000"
+        end:"+=3000"
     }
 });
 
@@ -56,7 +56,7 @@ const tlChap6 = gsap.timeline({
         pin:true,
         scrub:true,
         start:"top top",
-        end:"+=5000"
+        end:"+=3000"
     }
 });
 
@@ -99,9 +99,7 @@ section.forEach(function(monTitre) {
 
 
 //CHAPITRE 1
-gsap.timeline()
-
-.fromTo('.scene1-lilo-triste-1', {bottom:"0vh"},{bottom: "1vh", ease:"power1.inOut", yoyo:true, repeat:-1, duration:0.5},0.5)
+gsap.fromTo('.scene1-lilo-triste-1', {bottom:"0vh"},{bottom: "1vh", ease:"power1.inOut", yoyo:true, repeat:-1, duration:0.5},0.5)
 //parallax
 tlChap1
 .fromTo(".scene1-titre", {opacity:1}, {opacity:0, duration:1},5)
