@@ -1,6 +1,6 @@
-#  [Rapport d’optimisation du projet ScrollyTelling](https://pagespeed.web.dev/analysis/https-kenza-tim-momo-com/7tul36ylmg?form_factor=mobile).
+#  Rapport d’optimisation du projet ScrollyTelling
 
-Page Speed Insights - Rapport du 9 mai 2024, 14:23:24
+[Page Speed Insights - Rapport du 9 mai 2024, 14:23:24](https://pagespeed.web.dev/analysis/https-kenza-tim-momo-com/7tul36ylmg?form_factor=mobile).
 
 ## Problème #1
 
@@ -25,4 +25,6 @@ Page Speed Insights - Rapport du 9 mai 2024, 14:23:24
 - Rajouter le "loading="lazy"..." afin de pouvoir charger les images au moment convenu pour diminuer le temps de chargement.
 
 ## Rapport du projet ScrollyTelling après optimisation
+
+[Rapport du 9 mai 2024, 17:26:44](https://pagespeed.web.dev/analysis/https-kenza-tim-momo-com/l45tf2d9tt?form_factor=mobile).
 
