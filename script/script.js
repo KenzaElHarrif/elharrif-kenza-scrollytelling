@@ -1,13 +1,16 @@
 gsap.registerPlugin(ScrollTrigger);
-gsap.registerPlugin(DrawSVGPlugin);
+
 gsap.registerPlugin(MotionPathPlugin);
-gsap.registerPlugin(MorphSVGPlugin);
+//gsap.registerPlugin(DrawSVGPlugin);
+//gsap.registerPlugin(MorphSVGPlugin);
+/*POUR HTML: <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/DrawSVGPlugin3.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/MorphSVGPlugin3.min.js"></script>*/
 
 const tlChap1 = gsap.timeline({
     scrollTrigger:{
         trigger:"#chapitre1",
         pin:true,
-        markers:true,
+    
         scrub:true,
         start:"top top",
         end:"+=2000"
@@ -17,7 +20,6 @@ const tlChap2 = gsap.timeline({
     scrollTrigger:{
         trigger:"#chapitre2",
         pin:true,
-        markers:true,
         scrub:true,
         start:"top top",
         end:"+=5000"
@@ -27,7 +29,6 @@ const tlChap3 = gsap.timeline({
     scrollTrigger:{
         trigger:"#chapitre3",
         pin:true,
-        markers:true,
         scrub:true,
         start:"top top",
         end:"+=5000"
@@ -37,7 +38,6 @@ const tlChap4 = gsap.timeline({
     scrollTrigger:{
         trigger:"#chapitre4",
         pin:true,
-        markers:true,
         scrub:true,
         start:"top top",
         end:"+=5000"
@@ -48,7 +48,6 @@ const tlChap5 = gsap.timeline({
     scrollTrigger:{
         trigger:"#chapitre5",
         pin:true,
-        markers:true,
         scrub:true,
         start:"top top",
         end:"+=5000"
@@ -59,7 +58,6 @@ const tlChap6 = gsap.timeline({
     scrollTrigger:{
         trigger:"#chapitre6",
         pin:true,
-        markers:true,
         scrub:true,
         start:"top top",
         end:"+=5000"
@@ -93,7 +91,6 @@ section.forEach(function(monTitre) {
     
     gsap.timeline({
       scrollTrigger:{
-        markers:true,
         start:"top 50%",
         end:"bottom",
         trigger: monTitre,
@@ -124,7 +121,7 @@ tlChap1
 
 //CHAPITRE 2
 
-gsap.set("#path",{drawSVG:"0% 0%"});
+/*gsap.set("#path",{drawSVG:"0% 0%"});
 gsap.to("#path",{
     scrollTrigger:{
         trigger:".scene2-poisson4",
@@ -135,12 +132,11 @@ gsap.to("#path",{
     },
     drawSVG:"100% 0%",
     duration:7,
-    ease:"power1.inOut"})
+    ease:"power1.inOut"})*/
 
 gsap.fromTo(".scene2-lilo-tombe", {y:0, opacity:1, rotation:0},{
     scrollTrigger:{
         trigger:"#chapitre2",
-        markers: true,
         start: "top top",
         toggleActions: "play complete reverse reset"
     },
@@ -290,7 +286,7 @@ tlChap6
 .fromTo(".scene6-escalier6",{}, {x:"100vw",ease: "power1.out", duration:2},18.5)
 .fromTo(".scene6", {}, {y:"-200vh",ease: "none", duration:2},19)
 .fromTo(".scene6-fin", {}, {y:"-200vh",ease: "power1.out", duration:3},19)
-.to("#patte", {
+/*.to("#patte", {
     morphSVG: "#coeur"
-})
+})*/
 .fromTo(".fin", {opacity:0}, {opacity:1, duration:2})
